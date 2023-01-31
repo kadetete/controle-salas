@@ -37,11 +37,11 @@ class Ui_Widget(object):
         Widget.setFont(font)
         Widget.setStyleSheet(u"background-color:rgb(44, 44, 44);\n"
 "color:rgb(241, 241, 241);")
-        self.verticalLayout_4 = QVBoxLayout(Widget)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.vertical_layout_customer_cadastre = QVBoxLayout(Widget)
+        self.vertical_layout_customer_cadastre.setObjectName(u"vertical_layout_customer_cadastre")
         self.verticalSpacer_1 = QSpacerItem(70, 60, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_1)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_1)
 
         self.horizontal_llayout_customer_cadastre = QHBoxLayout()
         self.horizontal_llayout_customer_cadastre.setObjectName(u"horizontal_llayout_customer_cadastre")
@@ -69,11 +69,11 @@ class Ui_Widget(object):
         self.horizontal_llayout_customer_cadastre.addItem(self.horizontal_spacer_customer_cadastre_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_llayout_customer_cadastre)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_llayout_customer_cadastre)
 
         self.verticalSpacer_2 = QSpacerItem(30, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_2)
 
         self.horizontal_layout_user_name = QHBoxLayout()
         self.horizontal_layout_user_name.setObjectName(u"horizontal_layout_user_name")
@@ -98,11 +98,11 @@ class Ui_Widget(object):
         self.horizontal_layout_user_name.addItem(self.horizontal_spacer_user_name_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_layout_user_name)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_user_name)
 
         self.verticalSpacer_3 = QSpacerItem(13, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_3)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_3)
 
         self.horizontal_layout_matriculation = QHBoxLayout()
         self.horizontal_layout_matriculation.setObjectName(u"horizontal_layout_matriculation")
@@ -123,11 +123,11 @@ class Ui_Widget(object):
         self.horizontal_layout_matriculation.addItem(self.horizontal_spacer_matriculation_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_layout_matriculation)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_matriculation)
 
         self.verticalSpacer_4 = QSpacerItem(20, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_4)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_4)
 
         self.horizontal_layout_user_password = QHBoxLayout()
         self.horizontal_layout_user_password.setObjectName(u"horizontal_layout_user_password")
@@ -148,11 +148,11 @@ class Ui_Widget(object):
         self.horizontal_layout_user_password.addItem(self.horizontal_spacer_user_password_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_layout_user_password)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_user_password)
 
         self.verticalSpacer_5 = QSpacerItem(13, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_5)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_5)
 
         self.horizontal_layoutt_user_password_confirmation = QHBoxLayout()
         self.horizontal_layoutt_user_password_confirmation.setObjectName(u"horizontal_layoutt_user_password_confirmation")
@@ -163,7 +163,7 @@ class Ui_Widget(object):
         self.line_edit_user_password_confirmation = QLineEdit(Widget)
         self.line_edit_user_password_confirmation.setObjectName(u"line_edit_user_password_confirmation")
         self.line_edit_user_password_confirmation.setFont(font)
-        self.line_edit_user_password_confirmation.setInputMethodHints(Qt.ImhNone)
+        self.line_edit_user_password_confirmation.setInputMethodHints(Qt.ImhHiddenText|Qt.ImhNoAutoUppercase|Qt.ImhNoPredictiveText|Qt.ImhSensitiveData)
         self.line_edit_user_password_confirmation.setMaxLength(16)
         self.line_edit_user_password_confirmation.setFrame(True)
         self.line_edit_user_password_confirmation.setEchoMode(QLineEdit.Password)
@@ -176,11 +176,11 @@ class Ui_Widget(object):
         self.horizontal_layoutt_user_password_confirmation.addItem(self.horizontal_spacer_user_password_confirmation_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_layoutt_user_password_confirmation)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layoutt_user_password_confirmation)
 
         self.verticalSpacer_6 = QSpacerItem(20, 25, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_6)
 
         self.horizontal_layout_register = QHBoxLayout()
         self.horizontal_layout_register.setObjectName(u"horizontal_layout_register")
@@ -201,11 +201,11 @@ class Ui_Widget(object):
         self.horizontal_layout_register.addItem(self.horizontal_spacer_register_2)
 
 
-        self.verticalLayout_4.addLayout(self.horizontal_layout_register)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_register)
 
         self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.MinimumExpanding)
 
-        self.verticalLayout_4.addItem(self.verticalSpacer_7)
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_7)
 
 
         self.retranslateUi(Widget)
