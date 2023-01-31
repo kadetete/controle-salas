@@ -27,6 +27,8 @@ class Ui_Widget(object):
         font = QFont()
         font.setFamilies([u"Versa"])
         Widget.setFont(font)
+        icon = QIcon(QIcon.fromTheme(u"dialog-question"))
+        Widget.setWindowIcon(icon)
         self.gridLayout = QGridLayout(Widget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.labelTitulo = QLabel(Widget)
@@ -98,7 +100,7 @@ class Ui_Widget(object):
     # setupUi
 
     def retranslateUi(self, Widget):
-        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
+        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Calend\u00e1rio", None))
         self.labelTitulo.setText(QCoreApplication.translate("Widget", u"Insira data e hora:", None))
         self.labelHoraEntrada.setText(QCoreApplication.translate("Widget", u"Hora de entrada:", None))
         self.labelHoraSaida.setText(QCoreApplication.translate("Widget", u"Hora de sa\u00edda:", None))
