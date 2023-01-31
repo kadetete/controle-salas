@@ -32,5 +32,5 @@ Nesta tela principal o funcionário/usuario do sistema terá a opção de escolh
 ## Referências
 * Fonte utilizada no projeto: [Versa Versa](www.dafont.com/pt/versa-versa.font)
 * Ferramenta utilizada para organização: [Trello](https://trello.com/home)
-* Ferramenta utilizada para criação das interfaces gráficas: Qt Creator(https://www.qt.io/product/development-tools)
+* Ferramenta utilizada para criação das interfaces gráficas: [Qt Creator](https://www.qt.io/product/development-tools)
 * A linguagem utilizada para desenvolvimento foi Python com integração ao Qt
