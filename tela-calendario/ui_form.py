@@ -48,10 +48,6 @@ class Ui_Widget(object):
 
         self.gridLayout.addWidget(self.calendarWidget, 1, 0, 1, 4)
 
-        self.horizontalSpacer = QSpacerItem(188, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
-
-        self.gridLayout.addItem(self.horizontalSpacer, 2, 0, 1, 1)
-
         self.labelHoraEntrada = QLabel(Widget)
         self.labelHoraEntrada.setObjectName(u"labelHoraEntrada")
 
@@ -67,10 +63,6 @@ class Ui_Widget(object):
         self.timeEditHoraEntrada.setAlignment(Qt.AlignCenter)
 
         self.gridLayout.addWidget(self.timeEditHoraEntrada, 2, 2, 1, 1)
-
-        self.horizontalSpacer_2 = QSpacerItem(188, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
-
-        self.gridLayout.addItem(self.horizontalSpacer_2, 2, 3, 1, 1)
 
         self.labelHoraSaida = QLabel(Widget)
         self.labelHoraSaida.setObjectName(u"labelHoraSaida")
@@ -92,6 +84,14 @@ class Ui_Widget(object):
         self.pushButtonSair.setObjectName(u"pushButtonSair")
 
         self.gridLayout.addWidget(self.pushButtonSair, 4, 2, 1, 1)
+
+        self.horizontalSpacer_2 = QSpacerItem(188, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer_2, 2, 3, 2, 1)
+
+        self.horizontalSpacer = QSpacerItem(188, 20, QSizePolicy.Preferred, QSizePolicy.Minimum)
+
+        self.gridLayout.addItem(self.horizontalSpacer, 2, 0, 2, 1)
 
 
         self.retranslateUi(Widget)
