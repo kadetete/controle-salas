@@ -3,10 +3,10 @@
 ## Próposito
 O projeto é um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt.
 
-##Gerenciamento do projeto
+## Gerenciamento do projeto
 Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gerenciamento do projeto, como sugestão de um dos integrantes da equipe, [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função.
 
-##Prototipo de Telas
+## Prototipo de Telas
 Iniciamos o projeto com a prototipação das telas, imaginando sua composição e funcionalidades de cada janela.
 
 ## Telas
