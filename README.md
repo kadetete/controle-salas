@@ -28,4 +28,9 @@ Nesta tela principal o funcionário/usuario do sistema terá a opção de escolh
 
 ### Cadastro e edição de salas
 
-Fonte utilizada no projeto <a href="https://www.dafont.com/pt/versa-versa.font" target="_blank">www.dafont.com/pt/versa-versa.font</a>
+
+## Referências
+* Fonte utilizada no projeto: [Versa Versa](www.dafont.com/pt/versa-versa.font)
+* Ferramenta utilizada para organização: [Trello](https://trello.com/home)
+* Ferramenta utilizada para criação das interfaces gráficas: Qt Creator(https://www.qt.io/product/development-tools)
+* A linguagem utilizada para desenvolvimento foi Python com integração ao Qt
