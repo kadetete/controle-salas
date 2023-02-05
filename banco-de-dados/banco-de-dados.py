@@ -1,35 +1,39 @@
-from conexaobd import *
+from conexao_mysql import *
 import bcrypt
 
 class cadastro_user():
-    def __init__(self, matricula, nome, sobrenome = None):
-        self.__matricula = matricula
-        self.__nome      = nome
-        self.__sobrenome = sobrenome
+  def __init__(self, matricula, nome, sobrenome = None):
+      self.__matricula = matricula
+      self.__nome      = nome
+      self.__sobrenome = sobrenome
 
-    def incluir(self):
-        c = ConexaoBD()
-        sql  = f"INSERT INTO cliente (matricula, nome, sobrenome) "
-        sql += f"VALUES ({self.__matricula}, '{self.__nome}', '{self.__sobrenome}')"
-        c.executa_DML(sql)
+  def incluir(self):
+    c = Conexao_mysql()
+    achou = False
+    sql = 'SELECT * from cliente'
+    for linha in c.executa_DQL(sql):
+      if(f'{linha[1]}' == f'{self.__matricula}'):
+        achou = True
+        
+    if(achou == False):       
+      sql  = f"INSERT INTO cliente (matricula, nome, sobrenome) "
+      sql += f"VALUES ({self.__matricula}, '{self.__nome}', '{self.__sobrenome}')"
+      c.executa_DML(sql)
 
-    def alterar(self, matricula, va2, va1):
-        c = ConexaoBD()
+  def alterar(self, matricula, va2, va1):
+        c = Conexao_mysql()
         sql  = f"UPDATE cliente "
         sql += f"SET {va1} = '{va2}' "
-        sql += f"WHERE matricula = {matricula}"
+        sql += f"WHERE matricula = '{matricula}'"
         c.executa_DML(sql)
 
-    def excluir(self, matricula):
-        c = ConexaoBD()
-        sql  = f"DELETE FROM cliente "
-        sql += f"WHERE matricula = {matricula}"
-        c.executa_DML(sql)
+  def excluir(self, matricula):
+    c = Conexao_mysql()
+    sql  = f"DELETE FROM cliente "
+    sql += f"WHERE matricula = {matricula}"
+    c.executa_DML(sql)
 
-S = cadastro_user(1234, 'Beto', '')        
-S.incluir()
-S.alterar(2022114, 'Soares', 'Sobrenome')
-#S.excluir(1234)
+
 
 class Login():
     def __init__(self, username, passorwd):
@@ -38,7 +42,7 @@ class Login():
 
     def incluir(self):
       achou = False
-      c = ConexaoBD()
+      c = Conexao_mysql()
       sql = 'SELECT * from login'
       for linha in c.executa_DQL(sql):
         if(f'{linha[1]}' == f'{self.__username}'):
@@ -54,23 +58,26 @@ class Login():
         c.executa_DML(sql)
 
     def authenticate(self):
-        achou = False
-        c = ConexaoBD()
-        sql = 'SELECT * from login'
-        for linha in c.executa_DQL(sql):
-          if(f'{linha[1]}' == f'{self.__username}'):
-            if bcrypt.checkpw(self.__passorwd , linha[2].encode('utf-8')):
-              achou = True
-              print('Login e senha validos')
-              return True
-            else:
-              print('Senha invalida')
-              return False 
-        if(achou == False):
-          print('Login e senha invalidos')
-          return False
+      achou = False
+      c = Conexao_mysql()
+      sql = 'SELECT * from login'
+      for linha in c.executa_DQL(sql):
+        if(f'{linha[1]}' == f'{self.__username}'):
+          if bcrypt.checkpw(self.__passorwd , linha[2].encode('utf-8')):
+            achou = True
+            print('Login e senha validos')
+            return True
+          else:
+            print('Senha invalida')
+            return False 
+      if(achou == False):
+        print('Login e senha invalidos')
+        return False
             
-            
+S = cadastro_user(2022114, 'Beto', '')        
+S.incluir()
+S.alterar(2022114, 'Soares', 'sobrenome')
+#S.excluir(1234)     
 login = Login('Admin', '12345')
 login.incluir()
 login.authenticate()
