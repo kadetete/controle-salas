@@ -10,7 +10,7 @@
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
                             QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt, Slot, Signal)
+                            QSize, QTime, QUrl, Qt, Slot, Signal, Property)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
                            QFont, QFontDatabase, QGradient, QIcon,
                            QImage, QKeySequence, QLinearGradient, QPainter,
@@ -179,10 +179,10 @@ class LoginWidget(object):
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
-    @property(bool)
+    @Property
     def clicado(self):
-        return self._value
-    
+        return self.clicado
+
     @clicado.setter
     def clicado(self, valor):
         if self.clicado != valor:
