@@ -4,16 +4,20 @@
 O projeto é um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt.
 
 ## Ferramentas usadas no projeto
-Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gerenciamento do projeto, como sugestão de um dos integrantes da equipe, [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função.
-Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/)
+Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gerenciamento do projeto, como sugestão de um dos integrantes da equipe, 
+
+* [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função.
+
+* Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/) como sugestão de [Alycson Moreira](https://github.com/Alycson-Moreira)
+
 
 ## Prototipo de Telas
 Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.
 
-## Diagrama de caso de Uso
+## Diagrama UML caso de Uso
 Baseado no prototipo de telas foi feito o diagrama UMl de caso de uso onde nele apresentamos o fluxo e funcionalidades das telas. 
 
-![Tela do calendário](img/diagrama_uml_caso_de _uso.png)
+![diagrama caso de uso](img/diagrama_uml_caso_de _uso.png)
 
 
 
