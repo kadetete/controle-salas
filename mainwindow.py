@@ -32,7 +32,7 @@ class LoginJanela(QWidget, LoginWidget):
         autenticado = login1.authenticate()
         if autenticado == True:
             mainwindow.show()
-            self.close
+            self.close()
     
 
 
