@@ -12,11 +12,10 @@ from ui_form import Ui_MainWindow
 from login.login import LoginWidget
 from banco_de_dados.banco_de_dados import Login
 
-class MainWindow(QMainWindow):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+class MainWindow(QMainWindow, Ui_MainWindow):
+    def __init__(self) ->None:
+        super(MainWindow,self).__init__()
+        self.setupUi(self)
 
 class LoginJanela(QWidget, LoginWidget):
     def __init__(self) ->None:
@@ -24,6 +23,7 @@ class LoginJanela(QWidget, LoginWidget):
         self.setupUi(self)
         self.butaoEntrar.clicked.connect(self.checkLogin)
         self.botaoSair.clicked.connect(self.closedLogin)
+
     def checkLogin(self):
         usuario = self.lineEditUsuario.text()
         senha = self.lineEditSenha.text()
@@ -32,6 +32,7 @@ class LoginJanela(QWidget, LoginWidget):
         if autenticado == True:
             mainwindow.show()
             self.close()
+            
     def closedLogin(self):
         self.close()
 
