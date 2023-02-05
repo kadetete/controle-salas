@@ -154,6 +154,8 @@ class LoginWidget(object):
 
         self.butaoEntrar.clicked.connect(self.pegarInfo)
 
+        self.clicado = False
+
         self.retranslateUi(Widget)
 
         QMetaObject.connectSlotsByName(Widget)
@@ -183,5 +185,5 @@ class LoginWidget(object):
         login1 = Login(usuario, senha)
         autenticado = login1.authenticate()
         if autenticado:
-            mainwindow.show()
-            login.close()
+            self.clicado = True
+            

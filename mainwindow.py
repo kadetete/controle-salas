@@ -9,7 +9,6 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 #     pyside2-uic form.ui -o ui_form.py
 from ui_form import Ui_MainWindow
 from login.login import LoginWidget
-from banco_de_dados.banco_de_dados import Login
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -18,7 +17,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
 class LoginJanela(QWidget):
-    def __init__(self, parent=None) -> None:
+    def __init__(self, parent=None):
         super().__init__(parent)
         self.ui = LoginWidget()
         self.ui.setupUi(self)
@@ -28,4 +27,7 @@ if __name__ == "__main__":
     mainwindow = MainWindow()
     login = LoginJanela()
     login.show()
+    if login.ui.clicado == True:
+        mainwindow.show()
+        login.close()
     sys.exit(app.exec())
