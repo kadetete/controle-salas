@@ -179,7 +179,7 @@ class LoginWidget(object):
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
-    @Property
+    @Property(bool)
     def clicado(self):
         return self.clicado
 
