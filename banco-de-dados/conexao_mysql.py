@@ -1,6 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
-class ConexaoBD():
+class Conexao_mysql():
     try:
         def __init__(self, host ="localhost", user = "root", pwd = "", db = "controlesalas" ):
             self.host = host
