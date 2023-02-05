@@ -10,7 +10,7 @@
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
                             QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt, Slot)
+                            QSize, QTime, QUrl, Qt, Slot, Signal)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
                            QFont, QFontDatabase, QGradient, QIcon,
                            QImage, QKeySequence, QLinearGradient, QPainter,
@@ -155,6 +155,7 @@ class LoginWidget(object):
         self.butaoEntrar.clicked.connect(self.pegarInfo)
 
         self.clicado = False
+        self.valorMudado = Signal()
 
         self.retranslateUi(Widget)
 
@@ -178,6 +179,16 @@ class LoginWidget(object):
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
+    @property(bool)
+    def clicado(self):
+        return self._value
+    
+    @clicado.setter
+    def clicado(self, valor):
+        if self.clicado != valor:
+            self.clicado = valor
+            self.valorMudado.emit()
+
     @Slot()
     def pegarInfo(self):
         usuario = self.lineEditUsuario.text()
@@ -186,4 +197,3 @@ class LoginWidget(object):
         autenticado = login1.authenticate()
         if autenticado:
             self.clicado = True
-            

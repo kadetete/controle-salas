@@ -21,13 +21,16 @@ class LoginJanela(QWidget):
         super().__init__(parent)
         self.ui = LoginWidget()
         self.ui.setupUi(self)
+    
+    def fechar(self):
+        self.close()
+        mainwindow.show()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
     login = LoginJanela()
     login.show()
-    if login.ui.clicado == True:
-        mainwindow.show()
-        login.close()
+    login.ui.valorMudado.connect(login.fechar)
     sys.exit(app.exec())
+    
