@@ -1,4 +1,4 @@
-from ConexaoBD import *
+from conexaobd import *
 import bcrypt
 
 class cadastro_user():
