@@ -22,9 +22,8 @@ class LoginJanela(QWidget, LoginWidget):
     def __init__(self) ->None:
         super(LoginJanela,self).__init__()
         self.setupUi(self)
-
         self.butaoEntrar.clicked.connect(self.checkLogin)
-
+        self.botaoSair.clicked.connect(self.closedLogin)
     def checkLogin(self):
         usuario = self.lineEditUsuario.text()
         senha = self.lineEditSenha.text()
@@ -33,7 +32,8 @@ class LoginJanela(QWidget, LoginWidget):
         if autenticado == True:
             mainwindow.show()
             self.close()
-    
+    def closedLogin(self):
+        self.close()
 
 
 if __name__ == "__main__":
