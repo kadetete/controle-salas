@@ -13,6 +13,8 @@ Iniciamos o projeto com a prototipação das telas, imaginando sua composição 
 
 
 ### Tela login
+Nessa tela o funcionario vai entrar com usuario e senha para acessar a area de agendamento de salas.
+![Tela do login](img/janela_login.jpg)
 
 ### Tela calendário
 Tela onde o funcionário deverá escolher data e hora para reserva.
