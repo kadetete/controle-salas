@@ -152,8 +152,6 @@ class LoginWidget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-        self.butaoEntrar.clicked.connect(pegarInfo())
-
         self.retranslateUi(Widget)
 
         QMetaObject.connectSlotsByName(Widget)

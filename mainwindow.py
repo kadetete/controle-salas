@@ -38,5 +38,5 @@ if __name__ == "__main__":
     mainwindow = MainWindow()
     login = LoginJanela()
     login.show()
-    login.ui.butaoEntrar.clicked.connect(pegarInfo())
+    login.ui.butaoEntrar.clicked.connect(pegarInfo(login))
     sys.exit(app.exec())

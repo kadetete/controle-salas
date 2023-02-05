@@ -109,14 +109,3 @@ class Login():
       if(achou == False):
         print('Login e senha invalidos')
         return False
-            
-S = cadastro_user(2022114, 'Beto', '')        
-S.incluir()
-S.alterar(2022114, 'Soares', 'sobrenome')
-#S.excluir(1234)     
-login = Login('Admin', '12345')
-login.incluir()
-login.authenticate()
-login2 = Login('Fulano', '67890')
-login2.incluir()
-login2.authenticate()
