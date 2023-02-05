@@ -10,7 +10,7 @@
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
                             QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt)
+                            QSize, QTime, QUrl, Qt, Slot)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
                            QFont, QFontDatabase, QGradient, QIcon,
                            QImage, QKeySequence, QLinearGradient, QPainter,
@@ -152,6 +152,8 @@ class LoginWidget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
+        self.butaoEntrar.clicked.connect(self.pegarInfo)
+
         self.retranslateUi(Widget)
 
         QMetaObject.connectSlotsByName(Widget)
@@ -174,4 +176,12 @@ class LoginWidget(object):
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
-    
+    @Slot()
+    def pegarInfo(self):
+        usuario = self.lineEditUsuario.text()
+        senha = self.lineEditSenha.text()
+        login1 = Login(usuario, senha)
+        autenticado = login1.authenticate()
+        if autenticado:
+            mainwindow.show()
+            login.close()

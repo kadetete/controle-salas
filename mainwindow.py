@@ -23,20 +23,9 @@ class LoginJanela(QWidget):
         self.ui = LoginWidget()
         self.ui.setupUi(self)
 
-
-def pegarInfo(self):
-    usuario = self.ui.lineEditUsuario.text()
-    senha = self.ui.lineEditSenha.text()
-    login1 = Login(usuario, senha)
-    autenticado = login1.authenticate()
-    if autenticado:
-        mainwindow.show()
-        login.close()
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
     login = LoginJanela()
     login.show()
-    login.ui.butaoEntrar.clicked.connect(pegarInfo(login))
     sys.exit(app.exec())
