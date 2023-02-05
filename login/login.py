@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFormLayout, QHBoxLayout, QLabel,
                                QLineEdit, QPushButton, QSizePolicy, QSpacerItem,
                                QVBoxLayout, QWidget)
-from banco_de_dados.banco_de_dados import Login
+
 
 
 class LoginWidget(object):
@@ -152,10 +152,6 @@ class LoginWidget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-        self.butaoEntrar.clicked.connect(self.pegarInfo)
-
-        self.clicado = False
-        self.valorMudado = Signal()
 
         self.retranslateUi(Widget)
 
@@ -178,22 +174,3 @@ class LoginWidget(object):
         self.botaoSair.setText(
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
-
-    @Property(bool)
-    def clicado(self):
-        return self.clicado
-
-    @clicado.setter
-    def clicado(self, valor):
-        if self.clicado != valor:
-            self.clicado = valor
-            self.valorMudado.emit()
-
-    @Slot()
-    def pegarInfo(self):
-        usuario = self.lineEditUsuario.text()
-        senha = self.lineEditSenha.text()
-        login1 = Login(usuario, senha)
-        autenticado = login1.authenticate()
-        if autenticado:
-            self.clicado = True
