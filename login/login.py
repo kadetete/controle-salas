@@ -152,7 +152,7 @@ class LoginWidget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-        self.clicadoentrar = self.butaoEntrar.clicked
+        self.butaoEntrar.clicked.connect(pegarInfo())
 
         self.retranslateUi(Widget)
 
@@ -176,9 +176,4 @@ class LoginWidget(object):
             QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
-    def pegarInfo(self):
-        usuario = self.lineEditUsuario.text()
-        senha = self.lineEditSenha.text()
-        login1 = Login(usuario, senha)
-        autenticado = login1.authenticate()
-        return autenticado
+    
