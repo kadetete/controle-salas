@@ -26,7 +26,8 @@ idreserva int auto_increment primary key,
 idcliente int,
 idambiente int,
 data_reserva date not null,
-horario_reserva datetime not null,
+horario_inicio datetime not null,
+horario_final datetime not null,
 constraint fk_cliente_reserva foreign key (idcliente) references cliente(idcliente),
 constraint fk_ambiente_reserva foreign key (idambiente) references ambiente(idambiente)
 );
