@@ -28,9 +28,9 @@ if __name__ == "__main__":
     mainwindow = MainWindow()
     login = LoginJanela()
     login.show()
-    usuario, senha = login.ui.butaoEntrar.clicked.connect(login.ui.pegarInfo())
-    login1 = Login(usuario, senha)
-    autenticado = login1.authenticate()
-    if autenticado:
-        mainwindow.show()
+    if login.ui.clicadoentrar:
+        autenticado = login.ui.pegarInfo()
+        if autenticado:
+            mainwindow.show()
+            login.close()
     sys.exit(app.exec())
