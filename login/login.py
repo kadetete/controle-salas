@@ -147,7 +147,6 @@ class LoginWidget(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-
         self.retranslateUi(Widget)
 
         QMetaObject.connectSlotsByName(Widget)
