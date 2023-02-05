@@ -93,7 +93,6 @@ class WidgetCalendario(object):
 
         self.gridLayout.addItem(self.horizontalSpacer, 2, 0, 2, 1)
 
-
         self.retranslateUi(Widget)
 
         QMetaObject.connectSlotsByName(Widget)
@@ -108,3 +107,8 @@ class WidgetCalendario(object):
         self.pushButtonSair.setText(QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
+    def confirmar(self):
+        calendario = self.calendarWidget.selectedDate()
+        horario_inicio = self.timeEditHoraEntrada.time()
+        horario_fim = self.timeEditHoraSaida.time()
+        return calendario, horario_inicio, horario_fim
