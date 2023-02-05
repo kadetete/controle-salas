@@ -31,7 +31,7 @@ def pegarInfo(self):
     autenticado = login1.authenticate()
     if autenticado:
         mainwindow.show()
-        login.close
+        login.close()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
