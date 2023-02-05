@@ -3,11 +3,19 @@
 ## Próposito
 O projeto é um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt.
 
-## Gerenciamento do projeto
+## Ferramentas usadas no projeto
 Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gerenciamento do projeto, como sugestão de um dos integrantes da equipe, [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função.
+Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/)
 
 ## Prototipo de Telas
-Iniciamos o projeto com a prototipação das telas, imaginando sua composição e funcionalidades de cada janela.
+Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.
+
+## Diagrama de caso de Uso
+Baseado no prototipo de telas foi feito o diagrama UMl de caso de uso onde nele apresentamos o fluxo e funcionalidades das telas. 
+
+![Tela do calendário](img/diagrama_uml_caso_de _uso.png)
+
+
 
 ## Telas
 
@@ -17,8 +25,9 @@ Nessa tela o funcionario vai entrar com usuario e senha para acessar a area de a
 ![Tela do login](img/janela_login.jpg)
 
 ### Tela calendário
-Tela onde o funcionário deverá escolher data e hora para reserva.
+Apos o login o funcionario é redirecionado para a tela calendario(que segue abaixo), onde é selecionado a data e horario do agendamento.
 ![Tela do calendário](img/demonstracao_calendario.png)
+Tela onde o funcionário deverá escolher data e hora para reserva.
 
 ### Tela ambiente
 
