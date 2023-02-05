@@ -16,8 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFormLayout, QHBoxLayout, QLabel,
-    QLineEdit, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+    QLineEdit, QPushButton, QSizePolicy, QSpacerItem,
+    QVBoxLayout, QWidget)
 
 class Ui_Widget(object):
     def setupUi(self, Widget):
@@ -45,6 +45,10 @@ class Ui_Widget(object):
 
         self.verticalLayout_4.addWidget(self.lbSicoges)
 
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_3)
+
 
         self.verticalLayout.addLayout(self.verticalLayout_4)
 
@@ -62,58 +66,64 @@ class Ui_Widget(object):
 
         self.verticalLayout_2.addLayout(self.verticalLayout)
 
+        self.verticalSpacer = QSpacerItem(20, 24, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer)
+
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
-        self.formLayout.setLabelAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.formLayout.setFieldGrowthPolicy(QFormLayout.AllNonFixedFieldsGrow)
+        self.formLayout.setLabelAlignment(Qt.AlignCenter)
         self.formLayout.setFormAlignment(Qt.AlignCenter)
-        self.lbUsuario = QLabel(Widget)
-        self.lbUsuario.setObjectName(u"lbUsuario")
-        sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.lbUsuario.sizePolicy().hasHeightForWidth())
-        self.lbUsuario.setSizePolicy(sizePolicy)
-        font2 = QFont()
-        font2.setFamilies([u"Versa Versa"])
-        font2.setPointSize(12)
-        self.lbUsuario.setFont(font2)
-        self.lbUsuario.setStyleSheet(u"color: rgb(255, 255, 255);")
-
-        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.lbUsuario)
-
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.lineEditUsuario = QLineEdit(Widget)
         self.lineEditUsuario.setObjectName(u"lineEditUsuario")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.lineEditUsuario.sizePolicy().hasHeightForWidth())
-        self.lineEditUsuario.setSizePolicy(sizePolicy1)
-        self.lineEditUsuario.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEditUsuario.sizePolicy().hasHeightForWidth())
+        self.lineEditUsuario.setSizePolicy(sizePolicy)
+        font2 = QFont()
+        font2.setFamilies([u"Versa"])
+        font2.setPointSize(11)
+        self.lineEditUsuario.setFont(font2)
+        self.lineEditUsuario.setLayoutDirection(Qt.LeftToRight)
+        self.lineEditUsuario.setAlignment(Qt.AlignCenter)
 
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.lineEditUsuario)
+        self.horizontalLayout.addWidget(self.lineEditUsuario)
 
-        self.lbSenha = QLabel(Widget)
-        self.lbSenha.setObjectName(u"lbSenha")
-        sizePolicy.setHeightForWidth(self.lbSenha.sizePolicy().hasHeightForWidth())
-        self.lbSenha.setSizePolicy(sizePolicy)
-        self.lbSenha.setFont(font2)
-        self.lbSenha.setStyleSheet(u"color: rgb(255, 255, 255);")
 
-        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.lbSenha)
+        self.formLayout.setLayout(0, QFormLayout.FieldRole, self.horizontalLayout)
 
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.lineEditSenha = QLineEdit(Widget)
         self.lineEditSenha.setObjectName(u"lineEditSenha")
-        sizePolicy1.setHeightForWidth(self.lineEditSenha.sizePolicy().hasHeightForWidth())
-        self.lineEditSenha.setSizePolicy(sizePolicy1)
+        sizePolicy.setHeightForWidth(self.lineEditSenha.sizePolicy().hasHeightForWidth())
+        self.lineEditSenha.setSizePolicy(sizePolicy)
+        self.lineEditSenha.setFont(font2)
+        self.lineEditSenha.setEchoMode(QLineEdit.Password)
+        self.lineEditSenha.setAlignment(Qt.AlignCenter)
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.lineEditSenha)
+        self.horizontalLayout_3.addWidget(self.lineEditSenha)
+
+
+        self.formLayout.setLayout(1, QFormLayout.FieldRole, self.horizontalLayout_3)
+
+
+        self.verticalLayout_2.addLayout(self.formLayout)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_2)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.butaoEntrar = QPushButton(Widget)
         self.butaoEntrar.setObjectName(u"butaoEntrar")
-        sizePolicy1.setHeightForWidth(self.butaoEntrar.sizePolicy().hasHeightForWidth())
-        self.butaoEntrar.setSizePolicy(sizePolicy1)
+        sizePolicy.setHeightForWidth(self.butaoEntrar.sizePolicy().hasHeightForWidth())
+        self.butaoEntrar.setSizePolicy(sizePolicy)
         font3 = QFont()
         font3.setFamilies([u"Versa Versa"])
         font3.setPointSize(10)
@@ -125,8 +135,8 @@ class Ui_Widget(object):
 
         self.botaoSair = QPushButton(Widget)
         self.botaoSair.setObjectName(u"botaoSair")
-        sizePolicy1.setHeightForWidth(self.botaoSair.sizePolicy().hasHeightForWidth())
-        self.botaoSair.setSizePolicy(sizePolicy1)
+        sizePolicy.setHeightForWidth(self.botaoSair.sizePolicy().hasHeightForWidth())
+        self.botaoSair.setSizePolicy(sizePolicy)
         self.botaoSair.setFont(font3)
         self.botaoSair.setStyleSheet(u"color: rgb(255, 255, 255);\n"
 "background-color: rgb(76, 76, 76);")
@@ -135,10 +145,7 @@ class Ui_Widget(object):
         self.horizontalLayout_2.addWidget(self.botaoSair)
 
 
-        self.formLayout.setLayout(2, QFormLayout.SpanningRole, self.horizontalLayout_2)
-
-
-        self.verticalLayout_2.addLayout(self.formLayout)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
 
         self.retranslateUi(Widget)
@@ -150,8 +157,8 @@ class Ui_Widget(object):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Login", None))
         self.lbSicoges.setText(QCoreApplication.translate("Widget", u"SICOGES", None))
         self.lbLogin.setText(QCoreApplication.translate("Widget", u"Login", None))
-        self.lbUsuario.setText(QCoreApplication.translate("Widget", u"Usu\u00e1rio:", None))
-        self.lbSenha.setText(QCoreApplication.translate("Widget", u"Senha:", None))
+        self.lineEditUsuario.setPlaceholderText(QCoreApplication.translate("Widget", u"Usu\u00e1rio", None))
+        self.lineEditSenha.setPlaceholderText(QCoreApplication.translate("Widget", u"Senha", None))
         self.butaoEntrar.setText(QCoreApplication.translate("Widget", u"Entrar", None))
         self.botaoSair.setText(QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
