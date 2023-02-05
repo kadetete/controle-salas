@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QFormLayout, QHBoxLayout, QLabel,
     QLineEdit, QPushButton, QSizePolicy, QSpacerItem,
     QVBoxLayout, QWidget)
 
-class Ui_Widget(object):
+class LoginWidget(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
@@ -163,3 +163,7 @@ class Ui_Widget(object):
         self.botaoSair.setText(QCoreApplication.translate("Widget", u"Sair", None))
     # retranslateUi
 
+    def pegarInfo(self): 
+       usuario = self.lineEditUsuario.text()
+       senha = self.lineEditSenha.text()
+       return usuario, senha
