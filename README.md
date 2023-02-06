@@ -56,7 +56,8 @@ A tela apresenta a interface dos ambientes e dispões de funcionalidade de: rese
 ![Tela de Ambientes](img/tela_04_v6.png)
 
 ### Tela 05 - Cadastro de clientes
-
+Aqui fazemos o cadastro do cliente que deseja reservar alguma das salas da empresa.
+![Tela de Ambientes](img/cliente_cadastro.png)
 
 ### Tela 07 - Relatorio de Salas Reservadas
 Por Fim nesta ultima tela é mostrado a relação das reservas realizadas no sistemas 
