@@ -13,6 +13,8 @@ from login.ui_login import LoginWidget
 from calendario.ui_calendario import WidgetCalendario
 from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
+
+
 class MainWindow(QMainWindow, MenuMainWindow):
     def __init__(self) ->None:
         super(MainWindow,self).__init__()
@@ -41,6 +43,10 @@ class CalendarioWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
         super(CalendarioWidget,self).__init__()
         self.setupUi(self)
+        self.pushButtonConfirmar.clicked.connect(self.checkCalendario)
+    
+    def checkCalendario(self):
+        mainwindow.show()
 
 class ClienteWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
