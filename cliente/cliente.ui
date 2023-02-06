@@ -59,6 +59,62 @@ color:rgb(241, 241, 241);</string>
     </spacer>
    </item>
    <item>
+    <layout class="QHBoxLayout" name="horizontal_layout_sicoges">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontal_spacer_sicoges_1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_sicoges">
+       <property name="text">
+        <string>SICOGES</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontal_spacer_sicoges_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>30</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
     <layout class="QHBoxLayout" name="horizontal_llayout_customer_cadastre">
      <item>
       <spacer name="horizontal_spacer_customer_cadastre_1">
@@ -111,7 +167,7 @@ color:rgb(241, 241, 241);</string>
     </layout>
    </item>
    <item>
-    <spacer name="verticalSpacer_2">
+    <spacer name="verticalSpacer_3">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
@@ -120,16 +176,16 @@ color:rgb(241, 241, 241);</string>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>30</width>
-       <height>40</height>
+       <width>13</width>
+       <height>25</height>
       </size>
      </property>
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontal_layout_user_name">
+    <layout class="QHBoxLayout" name="horizontal_layout_nome_cliente">
      <item>
-      <spacer name="horizontal_spacer_user_name_1">
+      <spacer name="horizontal_spacer_nome_cliente_1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -142,7 +198,7 @@ color:rgb(241, 241, 241);</string>
       </spacer>
      </item>
      <item>
-      <widget class="QLineEdit" name="line_edit_user_name">
+      <widget class="QLineEdit" name="line_edit_nome_cliente">
        <property name="font">
         <font>
          <family>Versa Versa</family>
@@ -171,7 +227,7 @@ color:rgb(241, 241, 241);</string>
         <bool>false</bool>
        </property>
        <property name="placeholderText">
-        <string>Nome do usuário</string>
+        <string>Nome</string>
        </property>
        <property name="clearButtonEnabled">
         <bool>false</bool>
@@ -179,75 +235,7 @@ color:rgb(241, 241, 241);</string>
       </widget>
      </item>
      <item>
-      <spacer name="horizontal_spacer_user_name_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <spacer name="verticalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Fixed</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>13</width>
-       <height>13</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontal_layout_matriculation">
-     <item>
-      <spacer name="horizontal_spacer_matriculation_1">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="line_edit_matriculation">
-       <property name="font">
-        <font>
-         <family>Versa Versa</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="inputMethodHints">
-        <set>Qt::ImhNone</set>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="placeholderText">
-        <string>Matrícula</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontal_spacer_matriculation_2">
+      <spacer name="horizontal_spacer_nome_cliente_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -278,9 +266,9 @@ color:rgb(241, 241, 241);</string>
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontal_layout_user_password">
+    <layout class="QHBoxLayout" name="horizontal_layout_sobrenome_cliente">
      <item>
-      <spacer name="horizontal_spacer_user_password_1">
+      <spacer name="horizontal_spacer_sobrenome_cliente_1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -293,7 +281,7 @@ color:rgb(241, 241, 241);</string>
       </spacer>
      </item>
      <item>
-      <widget class="QLineEdit" name="line_edit_user_password">
+      <widget class="QLineEdit" name="line_edit_sobrenome_cliente">
        <property name="font">
         <font>
          <family>Versa Versa</family>
@@ -304,18 +292,18 @@ color:rgb(241, 241, 241);</string>
         <string/>
        </property>
        <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
+        <enum>QLineEdit::Normal</enum>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
        <property name="placeholderText">
-        <string>Senha</string>
+        <string>Sobrenome</string>
        </property>
       </widget>
      </item>
      <item>
-      <spacer name="horizontal_spacer_user_password_2">
+      <spacer name="horizontal_spacer_sobrenome_cliente_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -346,9 +334,9 @@ color:rgb(241, 241, 241);</string>
     </spacer>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontal_layoutt_user_password_confirmation">
+    <layout class="QHBoxLayout" name="horizontal_layout_matricula">
      <item>
-      <spacer name="horizontal_spacer_user_password_confirmation_1">
+      <spacer name="horizontal_spacer_matricula_1">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -361,7 +349,7 @@ color:rgb(241, 241, 241);</string>
       </spacer>
      </item>
      <item>
-      <widget class="QLineEdit" name="line_edit_user_password_confirmation">
+      <widget class="QLineEdit" name="line_edit_matricula">
        <property name="font">
         <font>
          <family>Versa Versa</family>
@@ -369,30 +357,21 @@ color:rgb(241, 241, 241);</string>
         </font>
        </property>
        <property name="inputMethodHints">
-        <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+        <set>Qt::ImhNone</set>
        </property>
        <property name="text">
         <string/>
-       </property>
-       <property name="maxLength">
-        <number>16</number>
-       </property>
-       <property name="frame">
-        <bool>true</bool>
-       </property>
-       <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
        <property name="placeholderText">
-        <string>Confirmação de Senha</string>
+        <string>Matrícula</string>
        </property>
       </widget>
      </item>
      <item>
-      <spacer name="horizontal_spacer_user_password_confirmation_2">
+      <spacer name="horizontal_spacer_matricula_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>

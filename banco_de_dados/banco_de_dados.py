@@ -37,7 +37,7 @@ class Conexao_mysql():
         print("Erro ao acessar tabela MySQL", e)
     
 
-class cadastro_user():
+class Cliente():
   def __init__(self, matricula, nome, sobrenome = None):
       self.__matricula = matricula
       self.__nome      = nome

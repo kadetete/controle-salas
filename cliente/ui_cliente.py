@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'form.ui'
+## Form generated from reading UI file 'cliente.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -43,6 +43,29 @@ class ClienteWidget(object):
 
         self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_1)
 
+        self.horizontal_layout_sicoges = QHBoxLayout()
+        self.horizontal_layout_sicoges.setObjectName(u"horizontal_layout_sicoges")
+        self.horizontal_layout_sicoges.setContentsMargins(-1, 0, -1, -1)
+        self.horizontal_spacer_sicoges_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontal_layout_sicoges.addItem(self.horizontal_spacer_sicoges_1)
+
+        self.label_sicoges = QLabel(Widget)
+        self.label_sicoges.setObjectName(u"label_sicoges")
+
+        self.horizontal_layout_sicoges.addWidget(self.label_sicoges)
+
+        self.horizontal_spacer_sicoges_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontal_layout_sicoges.addItem(self.horizontal_spacer_sicoges_2)
+
+
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_sicoges)
+
+        self.verticalSpacer_2 = QSpacerItem(30, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_2)
+
         self.horizontal_llayout_customer_cadastre = QHBoxLayout()
         self.horizontal_llayout_customer_cadastre.setObjectName(u"horizontal_llayout_customer_cadastre")
         self.horizontal_spacer_customer_cadastre_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -71,112 +94,84 @@ class ClienteWidget(object):
 
         self.vertical_layout_customer_cadastre.addLayout(self.horizontal_llayout_customer_cadastre)
 
-        self.verticalSpacer_2 = QSpacerItem(30, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
-
-        self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_2)
-
-        self.horizontal_layout_user_name = QHBoxLayout()
-        self.horizontal_layout_user_name.setObjectName(u"horizontal_layout_user_name")
-        self.horizontal_spacer_user_name_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontal_layout_user_name.addItem(self.horizontal_spacer_user_name_1)
-
-        self.line_edit_user_name = QLineEdit(Widget)
-        self.line_edit_user_name.setObjectName(u"line_edit_user_name")
-        self.line_edit_user_name.setFont(font)
-        self.line_edit_user_name.setInputMethodHints(Qt.ImhNoEditMenu)
-        self.line_edit_user_name.setFrame(True)
-        self.line_edit_user_name.setAlignment(Qt.AlignCenter)
-        self.line_edit_user_name.setDragEnabled(False)
-        self.line_edit_user_name.setReadOnly(False)
-        self.line_edit_user_name.setClearButtonEnabled(False)
-
-        self.horizontal_layout_user_name.addWidget(self.line_edit_user_name)
-
-        self.horizontal_spacer_user_name_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontal_layout_user_name.addItem(self.horizontal_spacer_user_name_2)
-
-
-        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_user_name)
-
-        self.verticalSpacer_3 = QSpacerItem(13, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
+        self.verticalSpacer_3 = QSpacerItem(13, 25, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
         self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_3)
 
-        self.horizontal_layout_matriculation = QHBoxLayout()
-        self.horizontal_layout_matriculation.setObjectName(u"horizontal_layout_matriculation")
-        self.horizontal_spacer_matriculation_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_layout_nome_cliente = QHBoxLayout()
+        self.horizontal_layout_nome_cliente.setObjectName(u"horizontal_layout_nome_cliente")
+        self.horizontal_spacer_nome_cliente_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layout_matriculation.addItem(self.horizontal_spacer_matriculation_1)
+        self.horizontal_layout_nome_cliente.addItem(self.horizontal_spacer_nome_cliente_1)
 
-        self.line_edit_matriculation = QLineEdit(Widget)
-        self.line_edit_matriculation.setObjectName(u"line_edit_matriculation")
-        self.line_edit_matriculation.setFont(font)
-        self.line_edit_matriculation.setInputMethodHints(Qt.ImhNone)
-        self.line_edit_matriculation.setAlignment(Qt.AlignCenter)
+        self.line_edit_nome_cliente = QLineEdit(Widget)
+        self.line_edit_nome_cliente.setObjectName(u"line_edit_nome_cliente")
+        self.line_edit_nome_cliente.setFont(font)
+        self.line_edit_nome_cliente.setInputMethodHints(Qt.ImhNoEditMenu)
+        self.line_edit_nome_cliente.setFrame(True)
+        self.line_edit_nome_cliente.setAlignment(Qt.AlignCenter)
+        self.line_edit_nome_cliente.setDragEnabled(False)
+        self.line_edit_nome_cliente.setReadOnly(False)
+        self.line_edit_nome_cliente.setClearButtonEnabled(False)
 
-        self.horizontal_layout_matriculation.addWidget(self.line_edit_matriculation)
+        self.horizontal_layout_nome_cliente.addWidget(self.line_edit_nome_cliente)
 
-        self.horizontal_spacer_matriculation_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_spacer_nome_cliente_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layout_matriculation.addItem(self.horizontal_spacer_matriculation_2)
+        self.horizontal_layout_nome_cliente.addItem(self.horizontal_spacer_nome_cliente_2)
 
 
-        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_matriculation)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_nome_cliente)
 
         self.verticalSpacer_4 = QSpacerItem(20, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
         self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_4)
 
-        self.horizontal_layout_user_password = QHBoxLayout()
-        self.horizontal_layout_user_password.setObjectName(u"horizontal_layout_user_password")
-        self.horizontal_spacer_user_password_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_layout_sobrenome_cliente = QHBoxLayout()
+        self.horizontal_layout_sobrenome_cliente.setObjectName(u"horizontal_layout_sobrenome_cliente")
+        self.horizontal_spacer_sobrenome_cliente_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layout_user_password.addItem(self.horizontal_spacer_user_password_1)
+        self.horizontal_layout_sobrenome_cliente.addItem(self.horizontal_spacer_sobrenome_cliente_1)
 
-        self.line_edit_user_password = QLineEdit(Widget)
-        self.line_edit_user_password.setObjectName(u"line_edit_user_password")
-        self.line_edit_user_password.setFont(font)
-        self.line_edit_user_password.setEchoMode(QLineEdit.Password)
-        self.line_edit_user_password.setAlignment(Qt.AlignCenter)
+        self.line_edit_sobrenome_cliente = QLineEdit(Widget)
+        self.line_edit_sobrenome_cliente.setObjectName(u"line_edit_sobrenome_cliente")
+        self.line_edit_sobrenome_cliente.setFont(font)
+        self.line_edit_sobrenome_cliente.setEchoMode(QLineEdit.Normal)
+        self.line_edit_sobrenome_cliente.setAlignment(Qt.AlignCenter)
 
-        self.horizontal_layout_user_password.addWidget(self.line_edit_user_password)
+        self.horizontal_layout_sobrenome_cliente.addWidget(self.line_edit_sobrenome_cliente)
 
-        self.horizontal_spacer_user_password_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_spacer_sobrenome_cliente_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layout_user_password.addItem(self.horizontal_spacer_user_password_2)
+        self.horizontal_layout_sobrenome_cliente.addItem(self.horizontal_spacer_sobrenome_cliente_2)
 
 
-        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_user_password)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_sobrenome_cliente)
 
         self.verticalSpacer_5 = QSpacerItem(13, 13, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
         self.vertical_layout_customer_cadastre.addItem(self.verticalSpacer_5)
 
-        self.horizontal_layoutt_user_password_confirmation = QHBoxLayout()
-        self.horizontal_layoutt_user_password_confirmation.setObjectName(u"horizontal_layoutt_user_password_confirmation")
-        self.horizontal_spacer_user_password_confirmation_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_layout_matricula = QHBoxLayout()
+        self.horizontal_layout_matricula.setObjectName(u"horizontal_layout_matricula")
+        self.horizontal_spacer_matricula_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layoutt_user_password_confirmation.addItem(self.horizontal_spacer_user_password_confirmation_1)
+        self.horizontal_layout_matricula.addItem(self.horizontal_spacer_matricula_1)
 
-        self.line_edit_user_password_confirmation = QLineEdit(Widget)
-        self.line_edit_user_password_confirmation.setObjectName(u"line_edit_user_password_confirmation")
-        self.line_edit_user_password_confirmation.setFont(font)
-        self.line_edit_user_password_confirmation.setInputMethodHints(Qt.ImhHiddenText|Qt.ImhNoAutoUppercase|Qt.ImhNoPredictiveText|Qt.ImhSensitiveData)
-        self.line_edit_user_password_confirmation.setMaxLength(16)
-        self.line_edit_user_password_confirmation.setFrame(True)
-        self.line_edit_user_password_confirmation.setEchoMode(QLineEdit.Password)
-        self.line_edit_user_password_confirmation.setAlignment(Qt.AlignCenter)
+        self.line_edit_matricula = QLineEdit(Widget)
+        self.line_edit_matricula.setObjectName(u"line_edit_matricula")
+        self.line_edit_matricula.setFont(font)
+        self.line_edit_matricula.setInputMethodHints(Qt.ImhNone)
+        self.line_edit_matricula.setAlignment(Qt.AlignCenter)
 
-        self.horizontal_layoutt_user_password_confirmation.addWidget(self.line_edit_user_password_confirmation)
+        self.horizontal_layout_matricula.addWidget(self.line_edit_matricula)
 
-        self.horizontal_spacer_user_password_confirmation_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontal_spacer_matricula_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontal_layoutt_user_password_confirmation.addItem(self.horizontal_spacer_user_password_confirmation_2)
+        self.horizontal_layout_matricula.addItem(self.horizontal_spacer_matricula_2)
 
 
-        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layoutt_user_password_confirmation)
+        self.vertical_layout_customer_cadastre.addLayout(self.horizontal_layout_matricula)
 
         self.verticalSpacer_6 = QSpacerItem(20, 25, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
@@ -215,16 +210,15 @@ class ClienteWidget(object):
 
     def retranslateUi(self, Widget):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Cadastro de clientes", None))
+        self.label_sicoges.setText(QCoreApplication.translate("Widget", u"SICOGES", None))
         self.label_customer_cadastre.setText(QCoreApplication.translate("Widget", u"CADASTRO DE CLIENTES", None))
-        self.line_edit_user_name.setInputMask("")
-        self.line_edit_user_name.setText("")
-        self.line_edit_user_name.setPlaceholderText(QCoreApplication.translate("Widget", u"Nome do usu\u00e1rio", None))
-        self.line_edit_matriculation.setText("")
-        self.line_edit_matriculation.setPlaceholderText(QCoreApplication.translate("Widget", u"Matr\u00edcula", None))
-        self.line_edit_user_password.setText("")
-        self.line_edit_user_password.setPlaceholderText(QCoreApplication.translate("Widget", u"Senha", None))
-        self.line_edit_user_password_confirmation.setText("")
-        self.line_edit_user_password_confirmation.setPlaceholderText(QCoreApplication.translate("Widget", u"Confirma\u00e7\u00e3o de Senha", None))
+        self.line_edit_nome_cliente.setInputMask("")
+        self.line_edit_nome_cliente.setText("")
+        self.line_edit_nome_cliente.setPlaceholderText(QCoreApplication.translate("Widget", u"Nome", None))
+        self.line_edit_sobrenome_cliente.setText("")
+        self.line_edit_sobrenome_cliente.setPlaceholderText(QCoreApplication.translate("Widget", u"Sobrenome", None))
+        self.line_edit_matricula.setText("")
+        self.line_edit_matricula.setPlaceholderText(QCoreApplication.translate("Widget", u"Matr\u00edcula", None))
         self.push_button_register.setText(QCoreApplication.translate("Widget", u"Registrar", None))
     # retranslateUi
 
