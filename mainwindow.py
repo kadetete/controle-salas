@@ -2,7 +2,7 @@
 import sys
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
-from PySide6.QtCore import QDate, QTime
+from PySide6.QtCore import QDate, QDateTime, QTime
 
 # Important:
 # You need to run the following command to generate the ui_form.py file
@@ -76,10 +76,12 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         data_min = QDate(ano_min, mes_min, dia_min)
         horario_min = QTime(hora_min, min_min, seg_min)
         horario_max = QTime(hora_min + 1, min_min, seg_min)
+        hmin = QDateTime(data_min, horario_min)
+        hmax = QDateTime(data_min, horario_max)
         self.setupUi(self)
         self.calendarWidget.setMinimumDate(data_min)
-        self.timeEditHoraEntrada.setMinimumTime(horario_min)
-        self.timeEditHoraSaida.setMinimumTime(horario_max)
+        self.timeEditHoraEntrada.setMinimumDateTime(hmin)
+        self.timeEditHoraSaida.setMinimumDateTime(hmax)
         self.pushButtonConfirmar.clicked.connect(self.confirmar)
         self.pushButtonSair.clicked.connect(self.closedCalendario)
 
