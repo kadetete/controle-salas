@@ -1,8 +1,8 @@
 # This Python file uses the following encoding: utf-8
 import sys
 
-from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
+from PySide6.QtCore import QDate, QTime
 
 # Important:
 # You need to run the following command to generate the ui_form.py file
@@ -13,6 +13,7 @@ from login.ui_login import LoginWidget
 from calendario.ui_calendario import WidgetCalendario
 from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
+import datetime
 
 
 class MainWindow(QMainWindow, MenuMainWindow):
@@ -63,9 +64,24 @@ class LoginWidget(QWidget, LoginWidget):
 class CalendarioWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
         super(CalendarioWidget,self).__init__()
+        data = datetime.date.today()
+        ano_min = data.year
+        mes_min = data.month
+        dia_min = data.day
+        hora_atual = datetime.datetime.now()
+        hora_min = hora_atual.hour
+        min_min = hora_atual.minute
+        seg_min = hora_atual.second
+        data_min = QDate(ano_min, mes_min, dia_min)
+        horario_min = QTime(hora_min, min_min, seg_min)
+        horario_max = QTime(hora_min + 1, min_min, seg_min)
         self.setupUi(self)
+        self.calendarWidget.minimumDate(data_min)
+        self.timeEditHoraEntrada.minimumTime(horario_min)
+        self.timeEditHoraSaida.minimumTime(horario_max)
         self.pushButtonConfirmar.clicked.connect(self.confirmar)
         self.pushButtonSair.clicked.connect(self.closedCalendario)
+        self.calendarWidget.setMinimumDate()
 
     def confirmar(self):
         calendario = self.calendarWidget.selectedDate()
@@ -77,6 +93,8 @@ class CalendarioWidget(QWidget, WidgetCalendario):
     def closedCalendario(self):
         login.show()
         self.close()
+
+    
 
 class ClienteWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
