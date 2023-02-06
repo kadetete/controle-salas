@@ -21,9 +21,8 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 
 * O Qt Designer foi ultilizado com ferramenta para criação das interfaces 
 
-* Ferramenta para comunicação rápida entre os integrantes foi utilizado o WhatsApp
-
-
+* O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes
+* 
 ## Protótipo de Telas
 Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.
 
