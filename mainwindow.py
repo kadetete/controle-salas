@@ -19,6 +19,11 @@ class MainWindow(QMainWindow, MenuMainWindow):
     def __init__(self) ->None:
         super(MainWindow,self).__init__()
         self.setupUi(self)
+        self.pushButton_voltar_menu.clicked.connect(self.closedMenu)
+
+    def closedMenu(self):
+        calendario.show()
+        self.close()
 
 class LoginWidget(QWidget, LoginWidget):
     def __init__(self) ->None:
@@ -44,9 +49,15 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         super(CalendarioWidget,self).__init__()
         self.setupUi(self)
         self.pushButtonConfirmar.clicked.connect(self.checkCalendario)
-    
+        self.pushButtonSair.clicked.connect(self.closedCalendario)
+
     def checkCalendario(self):
         mainwindow.show()
+        self.close()
+
+    def closedCalendario(self):
+        login.show()
+        self.close()
 
 class ClienteWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
