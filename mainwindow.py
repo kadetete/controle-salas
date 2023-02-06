@@ -48,7 +48,7 @@ class CalendarioWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
         super(CalendarioWidget,self).__init__()
         self.setupUi(self)
-        self.pushButtonConfirmar.clicked.connect(self.checkCalendario)
+        self.pushButtonConfirmar.clicked.connect(self.confirmar)
         self.pushButtonSair.clicked.connect(self.closedCalendario)
 
     def confirmar(self):
