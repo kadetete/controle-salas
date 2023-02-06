@@ -1,7 +1,16 @@
 # Sistema de Controle e Gestão de Salas
 
+## Integrantes
+
+* Alycson Denis Pereira Moreira
+* Layza Cecato Gomes Amaro
+* Alessandro Nunes Silva Cruz Filho
+* Guilherme Cadete Matias
+* Rafael Augusto Soares da Silva
+
 ## Próposito
-O projeto é um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt.
+
+Este projeto foi proposto como trabalho de conclusão da disciplina de POO (Programação Orientada a objetos), foi sugerido um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt integrado com o MySQL para o banco de dados.
 
 ## Ferramentas usadas no projeto
 Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gerenciamento do projeto, indicada pelos integrantes da equipe, 
@@ -9,6 +18,8 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 * [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função como sugestão.
 
 * Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/) como sugestão de [Alycson Moreira](https://github.com/Alycson-Moreira)
+
+* O Qt Designer foi ultilizado com ferramenta para criação das interfaces 
 
 
 ## Prototipo de Telas
