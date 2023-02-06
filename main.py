@@ -1,18 +1,14 @@
 # This Python file uses the following encoding: utf-8
 import sys
 
-
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 
-# Important:
-# You need to run the following command to generate the ui_form.py file
-#     pyside6-uic form.ui -o ui_form.py, or
-#     pyside2-uic form.ui -o ui_form.py
 from banco_de_dados.banco_de_dados import *
 from arquivos_py.ui_mainwindow import Ui_MainWindow
 from arquivos_py.ui_login import Ui_LoginWidget
 from arquivos_py.ui_calendario import Ui_CalendarioWidget
 from arquivos_py.ui_cliente import Ui_ClienteWidget
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self) ->None:
