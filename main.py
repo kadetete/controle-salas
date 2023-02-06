@@ -9,18 +9,19 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
 from banco_de_dados.banco_de_dados import *
-from ui_mainwindow import Ui_MainWindow
-from ui_login import LoginWidget
-
+from arquivos_py.ui_mainwindow import Ui_MainWindow
+from arquivos_py.ui_login import Ui_LoginWidget
+from arquivos_py.ui_calendario import Ui_CalendarioWidget
+from arquivos_py.ui_cliente import Ui_ClienteWidget
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self) ->None:
         super(MainWindow,self).__init__()
         self.setupUi(self)
 
-class LoginJanela(QWidget, LoginWidget):
+class LoginWidget(QWidget, Ui_LoginWidget):
     def __init__(self) ->None:
-        super(LoginJanela,self).__init__()
+        super(LoginWidget,self).__init__()
         self.setupUi(self)
         self.butaoEntrar.clicked.connect(self.checkLogin)
         self.botaoSair.clicked.connect(self.closedLogin)
@@ -31,17 +32,28 @@ class LoginJanela(QWidget, LoginWidget):
         login1 = Login(usuario, senha)
         autenticado = login1.authenticate()
         if autenticado == True:
-            mainwindow.show()
+            calendario.show()
             self.close()
             
     def closedLogin(self):
         self.close()
 
+class CalendarioWidget(QWidget, Ui_CalendarioWidget):
+    def __init__(self) ->None:
+        super(CalendarioWidget,self).__init__()
+        self.setupUi(self)
+
+class ClienteWidget(QWidget, Ui_ClienteWidget):
+    def __init__(self) ->None:
+        super(ClienteWidget,self).__init__()
+        self.setupUi(self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
-    login = LoginJanela()
+    login = LoginWidget()
+    calendario = CalendarioWidget()
+    cliente = ClienteWidget()
     login.show()
     sys.exit(app.exec())
     

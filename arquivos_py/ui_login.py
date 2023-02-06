@@ -21,7 +21,7 @@ from PySide6.QtWidgets import (QApplication, QFormLayout, QHBoxLayout, QLabel,
 
 
 
-class LoginWidget(object):
+class Ui_LoginWidget(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
