@@ -77,7 +77,7 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         horario_max = QTime(hora_min + 1, min_min, seg_min)
         self.setupUi(self)
         self.calendarWidget.setMinimumDate(data_min)
-        self.timeEditHoraEntrada.setmMinimumTime(horario_min)
+        self.timeEditHoraEntrada.setMinimumTime(horario_min)
         self.timeEditHoraSaida.setMinimumTime(horario_max)
         self.pushButtonConfirmar.clicked.connect(self.confirmar)
         self.pushButtonSair.clicked.connect(self.closedCalendario)
