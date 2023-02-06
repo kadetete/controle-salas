@@ -51,7 +51,7 @@ Nesta tela principal o funcionário/usuario do sistema terá a opção de escolh
 
 ### Tela 04 - Ambientes
 A tela apresenta a interface dos ambientes e dispões de funcionalidade de: reserva, edição, exclusão.
-![Tela de Ambientes](img/tela_04_v5.png)
+![Tela de Ambientes](img/tela_04_v6.png)
 
 ### Tela 05 - Cadastro de clientes
 
