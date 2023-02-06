@@ -8,27 +8,51 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 # You need to run the following command to generate the ui_form.py file
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
-from ui_form import Ui_MainWindow
-from login.login import LoginWidget
+from ui_menu import MenuMainWindow
+from login.ui_login import LoginWidget
+from calendario.ui_calendario import WidgetCalendario
+from cliente.ui_cliente import ClienteWidget
+from banco_de_dados.banco_de_dados import *
+class MainWindow(QMainWindow, MenuMainWindow):
+    def __init__(self) ->None:
+        super(MainWindow,self).__init__()
+        self.setupUi(self)
 
-class MainWindow(QMainWindow):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+class LoginWidget(QWidget, LoginWidget):
+    def __init__(self) ->None:
+        super(LoginWidget,self).__init__()
+        self.setupUi(self)
+        self.butaoEntrar.clicked.connect(self.checkLogin)
+        self.botaoSair.clicked.connect(self.closedLogin)
 
-class LoginJanela(QWidget):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.ui = LoginWidget()
-        self.ui.setupUi(self)
+    def checkLogin(self):
+        usuario = self.lineEditUsuario.text()
+        senha = self.lineEditSenha.text()
+        login1 = Login(usuario, senha)
+        autenticado = login1.authenticate()
+        if autenticado == True:
+            calendario.show()
+            self.close()
+            
+    def closedLogin(self):
+        self.close()
 
+class CalendarioWidget(QWidget, WidgetCalendario):
+    def __init__(self) ->None:
+        super(CalendarioWidget,self).__init__()
+        self.setupUi(self)
+
+class ClienteWidget(QWidget, WidgetCalendario):
+    def __init__(self) ->None:
+        super(ClienteWidget,self).__init__()
+        self.setupUi(self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     mainwindow = MainWindow()
-    login = LoginJanela()
+    login = LoginWidget()
+    calendario = CalendarioWidget()
+    cliente = ClienteWidget()
     login.show()
-    login.ui.valorMudado.connect(login.handleValorMudado)
     sys.exit(app.exec())
     

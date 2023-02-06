@@ -7,12 +7,12 @@ from PySide6.QtWidgets import QApplication, QWidget
 # You need to run the following command to generate the ui_form.py file
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
-from ui_login import LoginWidget
+from ui_cliente import ClienteWidget
 
 class Widget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.ui = LoginWidget()
+        self.ui = ClienteWidget()
         self.ui.setupUi(self)
 
 
