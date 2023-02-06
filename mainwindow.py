@@ -51,7 +51,10 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         self.pushButtonConfirmar.clicked.connect(self.checkCalendario)
         self.pushButtonSair.clicked.connect(self.closedCalendario)
 
-    def checkCalendario(self):
+    def confirmar(self):
+        calendario = self.calendarWidget.selectedDate()
+        horario_inicio = self.timeEditHoraEntrada.time()
+        horario_fim = self.timeEditHoraSaida.time()
         mainwindow.show()
         self.close()
 
