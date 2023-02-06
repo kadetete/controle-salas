@@ -113,10 +113,20 @@ class CalendarioWidget(QWidget, WidgetCalendario):
             self.fim = f'0{self.fim}'
         return self.inicio, self.fim
         
-class ClienteWidget(QWidget, WidgetCalendario):
+class ClienteWidget(QWidget, ClienteWidget):
     def __init__(self) ->None:
         super(ClienteWidget,self).__init__()
         self.setupUi(self)
+        self.push_button_register.clicked.connect(self.checkCliente)
+
+
+    def checkCliente(self):
+        matricula = self.line_edit_matricula.text()
+        nome = self.line_edit_nome_cliente.text()
+        sobrenome = self.line_edit_sobrenome_cliente.text()
+        cliente = Cliente(matricula, nome, sobrenome)
+        cliente.incluir()
+        self.close()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -161,7 +161,7 @@ class ClienteWidget(object):
         self.horizontal_spacer_matricula_1 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontal_layout_matricula.addItem(self.horizontal_spacer_matricula_1)
-
+        
         self.line_edit_matricula = QLineEdit(Widget)
         self.line_edit_matricula.setObjectName(u"line_edit_matricula")
         self.line_edit_matricula.setFont(font)
