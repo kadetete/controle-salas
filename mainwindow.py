@@ -26,6 +26,7 @@ class MainWindow(QMainWindow, MenuMainWindow):
         self.pushButton_SalasEstudo.clicked.connect(self.redirectSalaEstudo)
         self.pushButton_Labs.clicked.connect(self.redirectLaboratorio)
 
+
     def closedMenu(self):
         calendario.show()
         self.close()
@@ -84,8 +85,14 @@ class CalendarioWidget(QWidget, WidgetCalendario):
 
     def confirmar(self):
         calendario = self.calendarWidget.selectedDate()
+        data = calendario.getDate()
         horario_inicio = self.timeEditHoraEntrada.time()
         horario_fim = self.timeEditHoraSaida.time()
+        hora_inicio, hora_fim = self.formatarData((horario_inicio.hour()), (horario_fim.hour()))
+        min_inicio, min_fim  = self.formatarData((horario_inicio.minute()), (horario_fim.minute()))
+        
+        mainwindow.label_dias.setText(f'{data[2]}/{data[1]}/{data[0]}')
+        mainwindow.label_hora.setText(f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
         mainwindow.show()
         self.close()
 
@@ -93,8 +100,15 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         login.show()
         self.close()
 
-    
-
+    def formatarData(self, inicio, fim):
+        self.inicio = inicio
+        self.fim = fim
+        if self.inicio < 10:
+            self.inicio = f'0{self.inicio}'
+        if self.fim < 10:
+            self.fim = f'0{self.fim}'
+        return self.inicio, self.fim
+        
 class ClienteWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
         super(ClienteWidget,self).__init__()
