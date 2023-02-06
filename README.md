@@ -22,8 +22,10 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 * O Qt Designer foi ultilizado com ferramenta para criação das interfaces 
 
 * O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes
-* 
-## Protótipo de Telas
+
+* Para a implementação do banco de dados foi ultilizado o sgbd MySQL WORKBENC 
+
+# Protótipo de Telas
 Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.
 
 ## Diagrama UML caso de Uso
@@ -55,7 +57,10 @@ A tela apresenta a interface dos ambientes e dispões de funcionalidade de: rese
 
 ### Tela 05 - Cadastro de clientes
 
-### Tela 06 - Cadastro e edição de salas
+
+### Tela 07 - Relatorio de Salas Reservadas
+Por Fim nesta ultima tela é mostrado a relação das reservas realizadas no sistemas 
+![Tela de Ambientes](img/relatoriodesalas.png)
 
 
 ## Referências
