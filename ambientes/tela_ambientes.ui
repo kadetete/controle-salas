@@ -73,7 +73,7 @@ color: rgb(241, 241, 241);</string>
          </sizepolicy>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="page_lab">
          <layout class="QGridLayout" name="gridLayout_8">

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'tela_04_v5.ui'
+## Form generated from reading UI file 'tela_ambientes.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QLabel, QPushButton, QSizePolicy, QStackedWidget,
     QVBoxLayout, QWidget)
 
-class tela_ambientes(object):
+class Ui_main_widget(object):
     def setupUi(self, main_widget):
         if not main_widget.objectName():
             main_widget.setObjectName(u"main_widget")
@@ -528,7 +528,7 @@ class tela_ambientes(object):
 
         self.retranslateUi(main_widget)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(main_widget)
