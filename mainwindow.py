@@ -20,9 +20,25 @@ class MainWindow(QMainWindow, MenuMainWindow):
         super(MainWindow,self).__init__()
         self.setupUi(self)
         self.pushButton_voltar_menu.clicked.connect(self.closedMenu)
+        self.pushButton_Auditorios.clicked.connect(self.redirectAuditorio)
+        self.pushButton_SalaReuniao.clicked.connect(self.redirectSalaReuniao)
+        self.pushButton_SalasEstudo.clicked.connect(self.redirectSalaEstudo)
+        self.pushButton_Labs.clicked.connect(self.redirectLaboratorio)
 
     def closedMenu(self):
         calendario.show()
+        self.close()
+
+    def redirectAuditorio(self):
+        self.close()
+
+    def redirectSalaReuniao(self):
+        self.close()
+
+    def redirectLaboratorio(self):
+        self.close()
+
+    def redirectSalaEstudo(self):
         self.close()
 
 class LoginWidget(QWidget, LoginWidget):

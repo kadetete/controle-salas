@@ -403,10 +403,10 @@ class Ui_main_widget(object):
 
         self.widget_25 = QWidget(self.page_sl_study)
         self.widget_25.setObjectName(u"widget_25")
-        self.subtitle_sl_01 = QLabel(self.widget_25)
-        self.subtitle_sl_01.setObjectName(u"subtitle_sl_01")
-        self.subtitle_sl_01.setGeometry(QRect(0, 0, 86, 18))
-        self.subtitle_sl_01.setFont(font1)
+        self.SubtituloSala01 = QLabel(self.widget_25)
+        self.SubtituloSala01.setObjectName(u"SubtituloSala01")
+        self.SubtituloSala01.setGeometry(QRect(0, 0, 86, 18))
+        self.SubtituloSala01.setFont(font1)
         self.pushButton_22 = QPushButton(self.widget_25)
         self.pushButton_22.setObjectName(u"pushButton_22")
         self.pushButton_22.setGeometry(QRect(95, 140, 75, 24))
@@ -455,12 +455,12 @@ class Ui_main_widget(object):
 
         self.gridLayout_9.addWidget(self.widget_26, 1, 1, 1, 1)
 
-        self.subtitle_sl_study = QLabel(self.page_sl_study)
-        self.subtitle_sl_study.setObjectName(u"subtitle_sl_study")
-        self.subtitle_sl_study.setMaximumSize(QSize(16777215, 25))
-        self.subtitle_sl_study.setFont(font3)
+        self.TituloSalaEstudo = QLabel(self.page_sl_study)
+        self.TituloSalaEstudo.setObjectName(u"TituloSalaEstudo")
+        self.TituloSalaEstudo.setMaximumSize(QSize(16777215, 25))
+        self.TituloSalaEstudo.setFont(font3)
 
-        self.gridLayout_9.addWidget(self.subtitle_sl_study, 0, 0, 1, 2)
+        self.gridLayout_9.addWidget(self.TituloSalaEstudo, 0, 0, 1, 2)
 
         self.stackedWidget.addWidget(self.page_sl_study)
 
@@ -486,14 +486,6 @@ class Ui_main_widget(object):
         self.horizontalLayout.setSpacing(10)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(10, 2, 2, 2)
-        self.icon_container = QFrame(self.frame_4)
-        self.icon_container.setObjectName(u"icon_container")
-        self.icon_container.setLayoutDirection(Qt.LeftToRight)
-        self.icon_container.setFrameShape(QFrame.StyledPanel)
-        self.icon_container.setFrameShadow(QFrame.Raised)
-
-        self.horizontalLayout.addWidget(self.icon_container)
-
         self.icon_facebook = QLabel(self.frame_4)
         self.icon_facebook.setObjectName(u"icon_facebook")
         self.icon_facebook.setMaximumSize(QSize(20, 20))
@@ -510,6 +502,14 @@ class Ui_main_widget(object):
         self.icon_likedin.setScaledContents(True)
 
         self.horizontalLayout.addWidget(self.icon_likedin)
+
+        self.icon_container = QFrame(self.frame_4)
+        self.icon_container.setObjectName(u"icon_container")
+        self.icon_container.setLayoutDirection(Qt.LeftToRight)
+        self.icon_container.setFrameShape(QFrame.StyledPanel)
+        self.icon_container.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout.addWidget(self.icon_container)
 
         self.icon_git = QLabel(self.frame_4)
         self.icon_git.setObjectName(u"icon_git")
@@ -528,7 +528,7 @@ class Ui_main_widget(object):
 
         self.retranslateUi(main_widget)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(main_widget)
@@ -594,7 +594,7 @@ class Ui_main_widget(object):
         self.pushButton_31.setText(QCoreApplication.translate("main_widget", u"reservar", None))
         self.pushButton_32.setText(QCoreApplication.translate("main_widget", u"excluir", None))
         self.pushButton_33.setText(QCoreApplication.translate("main_widget", u"editar", None))
-        self.subtitle_sl_01.setText(QCoreApplication.translate("main_widget", u"sala 01", None))
+        self.SubtituloSala01.setText(QCoreApplication.translate("main_widget", u"sala 01", None))
         self.pushButton_22.setText(QCoreApplication.translate("main_widget", u"excluir", None))
         self.pushButton_23.setText(QCoreApplication.translate("main_widget", u"reservar", None))
         self.pushButton_24.setText(QCoreApplication.translate("main_widget", u"editar", None))
@@ -606,7 +606,7 @@ class Ui_main_widget(object):
         self.pushButton_25.setText(QCoreApplication.translate("main_widget", u"reservar", None))
         self.pushButton_26.setText(QCoreApplication.translate("main_widget", u"excluir", None))
         self.pushButton_27.setText(QCoreApplication.translate("main_widget", u"editar", None))
-        self.subtitle_sl_study.setText(QCoreApplication.translate("main_widget", u"<html><head/><body><p align=\"center\">salas de estudo</p><p align=\"center\"><br/></p><p align=\"center\"><br/></p></body></html>", None))
+        self.TituloSalaEstudo.setText(QCoreApplication.translate("main_widget", u"<html><head/><body><p align=\"center\">salas de estudo</p><p align=\"center\"><br/></p><p align=\"center\"><br/></p></body></html>", None))
         self.icon_facebook.setText("")
         self.icon_likedin.setText("")
         self.icon_git.setText("")
