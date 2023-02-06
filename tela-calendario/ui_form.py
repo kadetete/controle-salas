@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QCalendarWidget, QGridLayout, QLabe
     QPushButton, QSizePolicy, QSpacerItem, QTimeEdit,
     QWidget)
 
-class Ui_CalendarioWidget(object):
+class WidgetCalendario(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")

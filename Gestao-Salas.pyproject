@@ -1,3 +1,3 @@
 {
-    "files": ["main.py", "arquivos_ui/menu.ui", "arquivos_ui/login.ui", "arquivos_ui/calendario.ui", "arquivos_ui/cliente.ui"]
+    "files": ["mainwindow.py","menu.ui"]
 }
