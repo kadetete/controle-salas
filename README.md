@@ -23,7 +23,7 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 
 * O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes
 
-* Para a implementação do banco de dados foi ultilizado o sgbd MySQL WORKBENC 
+* Para a implementação do banco de dados foi ultilizado o sgbd MySQL WORKBENCH
 
 # Protótipo de Telas
 Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.

@@ -85,7 +85,7 @@ class LoginWidget(object):
         sizePolicy.setHeightForWidth(self.lineEditUsuario.sizePolicy().hasHeightForWidth())
         self.lineEditUsuario.setSizePolicy(sizePolicy)
         font2 = QFont()
-        font2.setFamilies([u"Versa"])
+        font2.setFamilies([u"Noto Sans CJK HK"])
         font2.setPointSize(11)
         self.lineEditUsuario.setFont(font2)
         self.lineEditUsuario.setLayoutDirection(Qt.LeftToRight)
