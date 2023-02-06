@@ -52,6 +52,10 @@ class ClienteWidget(object):
 
         self.label_sicoges = QLabel(Widget)
         self.label_sicoges.setObjectName(u"label_sicoges")
+        font1 = QFont()
+        font1.setFamilies([u"Versa"])
+        font1.setPointSize(24)
+        self.label_sicoges.setFont(font1)
 
         self.horizontal_layout_sicoges.addWidget(self.label_sicoges)
 
@@ -79,10 +83,10 @@ class ClienteWidget(object):
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.label_customer_cadastre.sizePolicy().hasHeightForWidth())
         self.label_customer_cadastre.setSizePolicy(sizePolicy1)
-        font1 = QFont()
-        font1.setFamilies([u"Versa Versa"])
-        font1.setPointSize(24)
-        self.label_customer_cadastre.setFont(font1)
+        font2 = QFont()
+        font2.setFamilies([u"Versa"])
+        font2.setPointSize(18)
+        self.label_customer_cadastre.setFont(font2)
         self.label_customer_cadastre.setAlignment(Qt.AlignCenter)
 
         self.horizontal_llayout_customer_cadastre.addWidget(self.label_customer_cadastre)

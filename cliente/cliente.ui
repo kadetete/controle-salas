@@ -78,6 +78,12 @@ color:rgb(241, 241, 241);</string>
      </item>
      <item>
       <widget class="QLabel" name="label_sicoges">
+       <property name="font">
+        <font>
+         <family>Versa</family>
+         <pointsize>24</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>SICOGES</string>
        </property>
@@ -139,8 +145,8 @@ color:rgb(241, 241, 241);</string>
        </property>
        <property name="font">
         <font>
-         <family>Versa Versa</family>
-         <pointsize>24</pointsize>
+         <family>Versa</family>
+         <pointsize>18</pointsize>
         </font>
        </property>
        <property name="text">
