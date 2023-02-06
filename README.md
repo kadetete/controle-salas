@@ -8,7 +8,7 @@
 * Guilherme Cadete Matias
 * Rafael Augusto Soares da Silva
 
-## Próposito
+## Propósito
 
 Este projeto foi proposto como trabalho de conclusão da disciplina de POO (Programação Orientada a objetos), foi sugerido um sistema para a gestão de salas, relacionando pessoas, datas e horários a uma sala para reserva. O projeto foi desenvolvido em python utilizando da biblioteca PySide6 para desenvolvimento de interfaces Qt integrado com o MySQL para o banco de dados.
 
@@ -21,8 +21,9 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 
 * O Qt Designer foi ultilizado com ferramenta para criação das interfaces 
 
-
-## Prototipo de Telas
+* O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes
+* 
+## Protótipo de Telas
 Iniciamos o projeto com a prototipação das telas, fizemos um primeiro esboço a mão, imaginando sua composição e funcionalidades de cada janela.
 
 ## Diagrama UML caso de Uso
@@ -35,24 +36,26 @@ Baseado no prototipo de telas foi feito o diagrama UMl de caso de uso onde nele 
 ## Telas
 
 
-### Tela login
+### Tela 01 - Login
 Nessa tela o funcionario vai entrar com usuario e senha para acessar a area de agendamento de salas.
 ![Tela do login](img/janela_login.jpg)
 
-### Tela calendário
+### Tela 02 - Calendário
 Apos o login o funcionario é redirecionado para a tela calendario(que segue abaixo), onde é selecionado a data e horario do agendamento.
 ![Tela do calendário](img/demonstracao_calendario.png)
 Tela onde o funcionário deverá escolher data e hora para reserva.
 
-### Tela ambiente
-
-### Menu
+### Tela 03 - Menu
 Nesta tela principal o funcionário/usuario do sistema terá a opção de escolher o ambiente que será reservado.
 ![Tela Principal](img/tela_principal.png)
 
-### Cadastro de clientes
+### Tela 04 - Ambientes
+A tela apresenta a interface dos ambientes e dispões de funcionalidade de: reserva, edição, exclusão.
+![Tela de Ambientes](img/tela_04_v5.png)
 
-### Cadastro e edição de salas
+### Tela 05 - Cadastro de clientes
+
+### Tela 06 - Cadastro e edição de salas
 
 
 ## Referências
