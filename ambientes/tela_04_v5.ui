@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_widget</class>
+ <widget class="QWidget" name="main_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(44, 44, 44);
+color: rgb(241, 241, 241);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="header_container">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="title_sicoges">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Versa Versa</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;SICOGES&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="main_container" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_lab">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_lab_03" native="true">
+            <widget class="QLabel" name="subtitle_lab_03">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 03</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_40">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_41">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_42">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_11">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;sala 01 - térreo - campacidade para 40 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_lab_01" native="true">
+            <widget class="QLabel" name="subtitle_lab_01">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 01</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_34">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_35">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_36">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_9">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;sala 01 - térreo - campacidade para 21 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_lab_02" native="true">
+            <widget class="QLabel" name="subtitle_lab_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 02</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_37">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_38">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_39">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_10">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;sala 02 - térreo - campacidade para 36 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="subtitle_lab">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Versa Versa</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Laboratórios&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_auditorium">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_aud_gurgel" native="true">
+            <widget class="QLabel" name="subtitle_aud_gurgel">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>271</width>
+               <height>36</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;bloco c : auditório deífilo gurgel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;169 m² com pé direito de 2,90 metros e capacidade para 120 lugares (cadeiras fixas)&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_aud_faria" native="true">
+            <widget class="QLabel" name="subtitle_aud_faria">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>251</width>
+               <height>36</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;bloco c : wilma de faria&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;896 m² com pé direito entre 4,30m e 8,90m, e capacidade para 676 lugares (cadeiras fixas) com placo e tela de projeção.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignHCenter|Qt::AlignTop</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="subtitle_environments_auditorium">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Versa Versa</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;auditórios&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_aud_fonseca" native="true">
+            <widget class="QLabel" name="subtitle_aud_fonseca">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>261</width>
+               <height>36</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;auditório ademilde fonseca&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Área total de 481m² com capacidaed para 400 pessoas em auditório&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_class_meeting">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_meet_zumbi" native="true">
+            <widget class="QLabel" name="subtitle_sl_zumbi">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala zumbi</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;54m² com campacidade para 45 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_meet_muriu" native="true">
+            <widget class="QLabel" name="subtitle_sl_muriu">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>87</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala muriú</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_16">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_17">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>exluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;37m² com capacidade para 25 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Versa Versa</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;salas de reunião&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_meet_pipa" native="true">
+            <widget class="QLabel" name="subtitle_sl_pipa">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>75</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala pipa</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;43m² com capacidade para 30 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QWidget" name="widget_meet_pitangui" native="true">
+            <widget class="QLabel" name="subtitle_sl_pitangui">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>106</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala pitangui</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_21">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>241</width>
+               <height>91</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;34m² com capacidade para 20 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_sl_study">
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="2" column="1">
+           <widget class="QWidget" name="widget_28" native="true">
+            <widget class="QLabel" name="subtitle_sl_04">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 04</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_31">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_32">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_33">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_25" native="true">
+            <widget class="QLabel" name="subtitle_sl_01">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 01</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_22">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_23">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_24">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QWidget" name="widget_27" native="true">
+            <widget class="QLabel" name="subtitle_sl_03">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 03</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_28">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_29">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_30">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="widget_26" native="true">
+            <widget class="QLabel" name="subtitle_sl_02">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>86</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Versa Versa</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>sala 02</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_25">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>reservar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_26">
+             <property name="geometry">
+              <rect>
+               <x>95</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_27">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>140</y>
+               <width>75</width>
+               <height>24</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>editar</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="subtitle_sl_study">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Versa Versa</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;salas de estudo&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="footer_conteiner">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="icon_container">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon_facebook">
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/github.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon_likedin">
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/linkedin.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="icon_git">
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/facebook-app-symbol.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
