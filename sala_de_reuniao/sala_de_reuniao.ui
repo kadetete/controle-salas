@@ -292,7 +292,7 @@
      <string>sala 03</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_reserve_meeting_03">
+   <widget class="QPushButton" name="pushButton_reserve_class_meeting_03">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -318,7 +318,7 @@
      <string>excluir</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="pushButton_edit_class_meeting_03">
     <property name="geometry">
      <rect>
       <x>180</x>

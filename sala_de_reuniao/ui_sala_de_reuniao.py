@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'form.ui'
+## Form generated from reading UI file 'sala_de_reuniao.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QPushButton, QSizePolicy, QWidget)
 
-class sala_de_reuniao(object):
+class Ui_Widget(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
@@ -101,15 +101,15 @@ class sala_de_reuniao(object):
         self.subtitle_sl_pipa.setObjectName(u"subtitle_sl_pipa")
         self.subtitle_sl_pipa.setGeometry(QRect(0, 0, 75, 18))
         self.subtitle_sl_pipa.setFont(font2)
-        self.pushButton_reserve_meeting_03 = QPushButton(self.widget_class_meeting_03)
-        self.pushButton_reserve_meeting_03.setObjectName(u"pushButton_reserve_meeting_03")
-        self.pushButton_reserve_meeting_03.setGeometry(QRect(10, 140, 75, 24))
+        self.pushButton_reserve_class_meeting_03 = QPushButton(self.widget_class_meeting_03)
+        self.pushButton_reserve_class_meeting_03.setObjectName(u"pushButton_reserve_class_meeting_03")
+        self.pushButton_reserve_class_meeting_03.setGeometry(QRect(10, 140, 75, 24))
         self.pushButton_13 = QPushButton(self.widget_class_meeting_03)
         self.pushButton_13.setObjectName(u"pushButton_13")
         self.pushButton_13.setGeometry(QRect(95, 140, 75, 24))
-        self.pushButton_14 = QPushButton(self.widget_class_meeting_03)
-        self.pushButton_14.setObjectName(u"pushButton_14")
-        self.pushButton_14.setGeometry(QRect(180, 140, 75, 24))
+        self.pushButton_edit_class_meeting_03 = QPushButton(self.widget_class_meeting_03)
+        self.pushButton_edit_class_meeting_03.setObjectName(u"pushButton_edit_class_meeting_03")
+        self.pushButton_edit_class_meeting_03.setGeometry(QRect(180, 140, 75, 24))
         self.label_7 = QLabel(self.widget_class_meeting_03)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(10, 40, 241, 91))
@@ -197,9 +197,9 @@ class sala_de_reuniao(object):
         self.pushButton_edit_class_meeting_02.setText(QCoreApplication.translate("Widget", u"editar ", None))
         self.label_description_class_meeting_02.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p><span style=\" font-size:11pt;\">37m\u00b2 com capacidade para 25 pessoas</span></p><p><span style=\" font-size:11pt;\"><br/></span></p><p><span style=\" font-size:11pt;\"><br/></span></p><p><span style=\" font-size:11pt;\"><br/></span></p></body></html>", None))
         self.subtitle_sl_pipa.setText(QCoreApplication.translate("Widget", u"sala 03", None))
-        self.pushButton_reserve_meeting_03.setText(QCoreApplication.translate("Widget", u"reservar", None))
+        self.pushButton_reserve_class_meeting_03.setText(QCoreApplication.translate("Widget", u"reservar", None))
         self.pushButton_13.setText(QCoreApplication.translate("Widget", u"excluir", None))
-        self.pushButton_14.setText(QCoreApplication.translate("Widget", u"editar", None))
+        self.pushButton_edit_class_meeting_03.setText(QCoreApplication.translate("Widget", u"editar", None))
         self.label_7.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p><span style=\" font-size:11pt;\">43m\u00b2 com capacidade para 30 pessoas</span></p><p><span style=\" font-size:11pt;\"><br/></span></p><p><span style=\" font-size:11pt;\"><br/></span></p></body></html>", None))
         self.subtitle_class_meeting_04.setText(QCoreApplication.translate("Widget", u"sala 04", None))
         self.pushButton_reserve_class_meeting_04.setText(QCoreApplication.translate("Widget", u"reservar", None))
