@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QLabel, QPushButton, QSizePolicy, QStackedWidget,
     QVBoxLayout, QWidget)
 
-class Ui_main_widget(object):
+class WidgetAmbientes(object):
     def setupUi(self, main_widget):
         if not main_widget.objectName():
             main_widget.setObjectName(u"main_widget")
