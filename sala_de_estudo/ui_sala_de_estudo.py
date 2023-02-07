@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QPushButton, QSizePolicy, QWidget)
 
-class Ui_Widget(object):
+class Sala_de_estudo(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
@@ -35,7 +35,7 @@ class Ui_Widget(object):
         self.footer_icon_facebook = QLabel(self.footer_frame_auditorium)
         self.footer_icon_facebook.setObjectName(u"footer_icon_facebook")
         self.footer_icon_facebook.setMaximumSize(QSize(20, 20))
-        self.footer_icon_facebook.setPixmap(QPixmap(u"../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png"))
+        self.footer_icon_facebook.setPixmap(QPixmap(u"../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png"))
         self.footer_icon_facebook.setScaledContents(True)
         self.footer_icon_facebook.setWordWrap(False)
 
@@ -44,7 +44,7 @@ class Ui_Widget(object):
         self.footer_icon_likedin = QLabel(self.footer_frame_auditorium)
         self.footer_icon_likedin.setObjectName(u"footer_icon_likedin")
         self.footer_icon_likedin.setMaximumSize(QSize(20, 20))
-        self.footer_icon_likedin.setPixmap(QPixmap(u"../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png"))
+        self.footer_icon_likedin.setPixmap(QPixmap(u"../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png"))
         self.footer_icon_likedin.setScaledContents(True)
 
         self.horizontalLayout.addWidget(self.footer_icon_likedin)
@@ -52,7 +52,7 @@ class Ui_Widget(object):
         self.footer_icon_git = QLabel(self.footer_frame_auditorium)
         self.footer_icon_git.setObjectName(u"footer_icon_git")
         self.footer_icon_git.setMaximumSize(QSize(20, 20))
-        self.footer_icon_git.setPixmap(QPixmap(u"../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png"))
+        self.footer_icon_git.setPixmap(QPixmap(u"../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png"))
         self.footer_icon_git.setScaledContents(True)
 
         self.horizontalLayout.addWidget(self.footer_icon_git)
@@ -184,10 +184,10 @@ class Ui_Widget(object):
         if QIcon.hasThemeIcon(iconThemeName):
             icon = QIcon.fromTheme(iconThemeName)
         else:
-            icon.addFile(u"../../controle-salas", QSize(), QIcon.Normal, QIcon.Off)
+            icon.addFile(u"../", QSize(), QIcon.Normal, QIcon.Off)
 
         self.pushButton_salaestudo_voltar.setIcon(icon)
-        self.pushButton_salaestudo_voltar.setFlat(True)
+        self.pushButton_salaestudo_voltar.setFlat(False)
 
         self.horizontalLayout_3.addWidget(self.pushButton_salaestudo_voltar)
 
@@ -230,6 +230,8 @@ class Ui_Widget(object):
         self.pushButton_adicionar_salaestudo.setObjectName(u"pushButton_adicionar_salaestudo")
         sizePolicy.setHeightForWidth(self.pushButton_adicionar_salaestudo.sizePolicy().hasHeightForWidth())
         self.pushButton_adicionar_salaestudo.setSizePolicy(sizePolicy)
+        self.pushButton_adicionar_salaestudo.setMaximumSize(QSize(25, 25))
+        self.pushButton_adicionar_salaestudo.setFont(font4)
         icon1 = QIcon()
         iconThemeName = u"list-add"
         if QIcon.hasThemeIcon(iconThemeName):
@@ -239,7 +241,7 @@ class Ui_Widget(object):
 
         self.pushButton_adicionar_salaestudo.setIcon(icon1)
         self.pushButton_adicionar_salaestudo.setAutoDefault(False)
-        self.pushButton_adicionar_salaestudo.setFlat(True)
+        self.pushButton_adicionar_salaestudo.setFlat(False)
 
         self.horizontalLayout_12.addWidget(self.pushButton_adicionar_salaestudo)
 
@@ -284,10 +286,10 @@ class Ui_Widget(object):
         self.pushButton_delete_class_meeting_04.setText(QCoreApplication.translate("Widget", u"excluir", None))
         self.pushButton_edit_class_meeting_04.setText(QCoreApplication.translate("Widget", u"editar", None))
         self.label_description_class_meeting_04.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p><span style=\" font-size:11pt;\">DESCRI\u00c7\u00c3O</span></p></body></html>", None))
-        self.pushButton_salaestudo_voltar.setText("")
+        self.pushButton_salaestudo_voltar.setText(QCoreApplication.translate("Widget", u"voltar", None))
         self.label_33.setText(QCoreApplication.translate("Widget", u"                           SICOGES", None))
         self.subtitle_environments_meeting.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p align=\"center\">        SALA DE ESTUDO</p></body></html>", None))
-        self.pushButton_adicionar_salaestudo.setText("")
+        self.pushButton_adicionar_salaestudo.setText(QCoreApplication.translate("Widget", u"+", None))
         self.label_13.setText(QCoreApplication.translate("Widget", u"Adicionar Nova Sala", None))
     # retranslateUi
 

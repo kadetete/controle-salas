@@ -14,6 +14,7 @@ from calendario.ui_calendario import WidgetCalendario
 from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
 from sala_de_reuniao.ui_sala_de_reuniao import Sala_de_reuniao
+from sala_de_estudo.ui_sala_de_estudo import Sala_de_estudo
 import datetime
 
 
@@ -44,6 +45,7 @@ class MainWindow(QMainWindow, MenuMainWindow):
 
     def redirectSalaEstudo(self):
         self.close()
+        sala_estudo.show()
 
 class LoginWidget(QWidget, LoginWidget):
     def __init__(self) ->None:
@@ -96,11 +98,17 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         horario_fim = self.timeEditHoraSaida.time()
         hora_inicio, hora_fim = self.formatarData((horario_inicio.hour()), (horario_fim.hour()))
         min_inicio, min_fim  = self.formatarData((horario_inicio.minute()), (horario_fim.minute()))
-        Ambiente.data_time(f'{data[2]}/{data[1]}/{data[0]}', f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
+        self.data_escolida = [data[2], data[1], data[0]]
+        self.horario_inicio_escolido = [hora_inicio, min_inicio]
+        self.horario_final_escolido = [hora_fim, min_fim]
+        #Ambiente.data_time(f'{data[2]}/{data[1]}/{data[0]}', f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
         mainwindow.label_dias.setText(f'{data[2]}/{data[1]}/{data[0]}')
         mainwindow.label_hora.setText(f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
         mainwindow.show()
         self.close()
+
+    def data_time_escolido(self):
+        return self.data_escolida, self.horario_inicio_escolido, self.horario_final_escolido
 
     def closedCalendario(self):
         login.show()
@@ -123,27 +131,46 @@ class ClienteWidget(QWidget, ClienteWidget):
 
 
     def checkCliente(self):
+        self.cliente1 = ''
         matricula = self.line_edit_matricula.text()
         nome = self.line_edit_nome_cliente.text()
         sobrenome = self.line_edit_sobrenome_cliente.text()
-        cliente = Cliente(matricula, nome, sobrenome)
-        cliente.incluir()
+        if (matricula != '' and nome != ""):
+            self.cliente1 = Cliente(matricula, nome, sobrenome)
+            self.cliente1.incluir()
+            self.close()
+
+    def cliente_atual(self):
+        return self.cliente1
+    
+class Ambiente():
+    def resevar(self):
+        cliente.show()
+        data, time_inicio, time_fim = CalendarioWidget.data_time_escolido()
+        dados_cliente = cliente.push_button_register.clicked.connect(cliente.cliente_atual())
+        
+
+class Sala_de_estudo(QWidget, Sala_de_estudo):
+    def __init__(self) ->None:
+        super(Sala_de_estudo,self).__init__()
+        self.setupUi(self)
+        self.pushButton_salaestudo_voltar.clicked.connect(self.closedSaladeestudo)
+        self.pushButton_reserve_class_meeting_01.clicked.connect(Ambiente.resevar)
+        self.pushButton_reserve_class_meeting_02.clicked.connect(Ambiente.resevar)
+        self.pushButton_reserve_meeting_03.clicked.connect(Ambiente.resevar)
+        self.pushButton_reserve_class_meeting_04.clicked.connect(Ambiente.resevar)
+
+
+
+    def closedSaladeestudo(self):
+        mainwindow.show()
         self.close()
 
-class Ambiente():
-    def data_time(self, data, hora):
-        self.__data = data
-        self.__hora = hora
-
-class Sala_de_reuniao(QMainWindow, Sala_de_reuniao):
+class Sala_de_reuniao(QWidget, Sala_de_reuniao):
     def __init__(self) ->None:
         super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
-        self.pushButton_edit_class_meeting_01.clicked.connect(self.editar(1))
 
-    def editar(self, num):
-        self.label_description_class_meeting_01
-        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -152,6 +179,7 @@ if __name__ == "__main__":
     calendario = CalendarioWidget()
     cliente = ClienteWidget()
     sala_reuniao = Sala_de_reuniao()
+    sala_estudo = Sala_de_estudo()
     login.show()
     sys.exit(app.exec())
     

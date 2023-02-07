@@ -56,7 +56,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -78,7 +78,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -97,7 +97,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -233,7 +233,7 @@
      <string>sala 03</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_reserve_meeting_03">
+   <widget class="QPushButton" name="pushButton_reserve_class_meeting_03">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -259,7 +259,7 @@
      <string>excluir</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="pushButton_edit_class_meeting_03">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -272,7 +272,7 @@
      <string>editar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="label_description_class_meeting_03">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -539,14 +539,14 @@
        <enum>Qt::RightToLeft</enum>
       </property>
       <property name="text">
-       <string/>
+       <string>voltar</string>
       </property>
       <property name="icon">
        <iconset theme="go-previous">
-        <normaloff>../../controle-salas</normaloff>../../controle-salas</iconset>
+        <normaloff>../</normaloff>../</iconset>
       </property>
       <property name="flat">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -622,8 +622,20 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="maximumSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Versa Versa</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
       <property name="text">
-       <string/>
+       <string>+</string>
       </property>
       <property name="icon">
        <iconset theme="list-add">
@@ -636,7 +648,7 @@
        <bool>false</bool>
       </property>
       <property name="flat">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
      </widget>
     </item>
