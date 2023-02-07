@@ -13,7 +13,7 @@ from login.ui_login import LoginWidget
 from calendario.ui_calendario import WidgetCalendario
 from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
-from sala_de_reuniao.ui_sala_de_reuniao import sala_de_reuniao
+from sala_de_reuniao.ui_sala_de_reuniao import Sala_de_reuniao
 import datetime
 
 
@@ -96,7 +96,7 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         horario_fim = self.timeEditHoraSaida.time()
         hora_inicio, hora_fim = self.formatarData((horario_inicio.hour()), (horario_fim.hour()))
         min_inicio, min_fim  = self.formatarData((horario_inicio.minute()), (horario_fim.minute()))
-        
+        Ambiente.data_time(f'{data[2]}/{data[1]}/{data[0]}', f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
         mainwindow.label_dias.setText(f'{data[2]}/{data[1]}/{data[0]}')
         mainwindow.label_hora.setText(f'{hora_inicio}:{min_inicio} - {hora_fim}:{min_fim}')
         mainwindow.show()
@@ -130,13 +130,20 @@ class ClienteWidget(QWidget, ClienteWidget):
         cliente.incluir()
         self.close()
 
-class Sala_de_reuniao(QMainWindow, sala_de_reuniao):
+class Ambiente():
+    def data_time(self, data, hora):
+        self.__data = data
+        self.__hora = hora
+
+class Sala_de_reuniao(QMainWindow, Sala_de_reuniao):
     def __init__(self) ->None:
         super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
+        self.pushButton_edit_class_meeting_01.clicked.connect(self.editar(1))
 
-
-
+    def editar(self, num):
+        self.label_description_class_meeting_01
+        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

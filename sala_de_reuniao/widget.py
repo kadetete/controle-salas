@@ -8,12 +8,12 @@ from PySide6.QtWidgets import QApplication, QWidget
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
 
-from ui_sala_de_reuniao import sala_de_reuniao
+from ui_sala_de_reuniao import Sala_de_reuniao
 
 class Widget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.ui = sala_de_reuniao()
+        self.ui = Sala_de_reuniao()
         self.ui.setupUi(self)
 
 
