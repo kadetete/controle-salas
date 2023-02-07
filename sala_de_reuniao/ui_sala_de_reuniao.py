@@ -22,8 +22,10 @@ class Sala_de_reuniao(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
-        Widget.resize(800, 600)
-        Widget.setStyleSheet(u"background-color: rgb(41, 41, 41);")
+        Widget.resize(859, 545)
+        Widget.setMinimumSize(QSize(859, 545))
+        Widget.setMaximumSize(QSize(859, 545))
+        Widget.setStyleSheet(u"")
         self.title_sicoges_auditorium = QLabel(Widget)
         self.title_sicoges_auditorium.setObjectName(u"title_sicoges_auditorium")
         self.title_sicoges_auditorium.setGeometry(QRect(120, 10, 561, 50))
@@ -193,7 +195,7 @@ class Sala_de_reuniao(object):
         self.label_description_class_meeting_01.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p><span style=\" font-size:11pt;\">54m\u00b2 com campacidade para 45 pessoas</span></p><p><span style=\" font-size:11pt;\"><br/></span></p></body></html>", None))
         self.subtitle_class_meeting_02.setText(QCoreApplication.translate("Widget", u"Sala 02", None))
         self.pushButton_reserve_class_meeting_02.setText(QCoreApplication.translate("Widget", u"reservar", None))
-        self.pushButton_delete_class_meeting_02.setText(QCoreApplication.translate("Widget", u"exluir", None))
+        self.pushButton_delete_class_meeting_02.setText(QCoreApplication.translate("Widget", u"excluir", None))
         self.pushButton_edit_class_meeting_02.setText(QCoreApplication.translate("Widget", u"editar ", None))
         self.label_description_class_meeting_02.setText(QCoreApplication.translate("Widget", u"<html><head/><body><p><span style=\" font-size:11pt;\">37m\u00b2 com capacidade para 25 pessoas</span></p><p><span style=\" font-size:11pt;\"><br/></span></p><p><span style=\" font-size:11pt;\"><br/></span></p><p><span style=\" font-size:11pt;\"><br/></span></p></body></html>", None))
         self.subtitle_sl_pipa.setText(QCoreApplication.translate("Widget", u"sala 03", None))
