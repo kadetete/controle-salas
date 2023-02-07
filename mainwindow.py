@@ -202,6 +202,12 @@ class Auditorios(QWidget, WidgetAuditorio):
     def __init__(self) -> None:
         super(Auditorios, self).__init__()
         self.setupUi(self)
+        self.pushButton_auditorio_voltar.clicked.connect(self.closedAuditorio)
+    
+
+    def closedAuditorio(self):
+        mainwindow.show()
+        self.close()
 
 class Laboratorio(QWidget, WidgetLaboratorio):
     def __init__(self) -> None:
