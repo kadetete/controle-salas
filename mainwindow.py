@@ -13,7 +13,7 @@ from login.ui_login import LoginWidget
 from calendario.ui_calendario import WidgetCalendario
 from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
-from ambientes.ui_tela_ambientes import WidgetAmbientes
+from sala_de_reuniao.ui_sala_de_reuniao import sala_de_reuniao
 import datetime
 
 
@@ -34,23 +34,16 @@ class MainWindow(QMainWindow, MenuMainWindow):
 
     def redirectAuditorio(self):
         self.close()
-        ambientes.stackedWidget.setCurrentIndex(0)
-        ambientes.show()
         
     def redirectSalaReuniao(self):
         self.close()
-        ambientes.stackedWidget.setCurrentIndex(1)
-        ambientes.show()
+        sala_reuniao.show()
 
     def redirectLaboratorio(self):
         self.close()
-        ambientes.stackedWidget.setCurrentIndex(2)
-        ambientes.show()
 
     def redirectSalaEstudo(self):
         self.close()
-        ambientes.stackedWidget.setCurrentIndex(3)
-        ambientes.show()
 
 class LoginWidget(QWidget, LoginWidget):
     def __init__(self) ->None:
@@ -137,10 +130,13 @@ class ClienteWidget(QWidget, ClienteWidget):
         cliente.incluir()
         self.close()
 
-class AmbienteWidget(QMainWindow, WidgetAmbientes):
+class Sala_de_reuniao(QMainWindow, sala_de_reuniao):
     def __init__(self) ->None:
-        super(AmbienteWidget, self).__init__()
+        super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
+
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -148,7 +144,7 @@ if __name__ == "__main__":
     login = LoginWidget()
     calendario = CalendarioWidget()
     cliente = ClienteWidget()
-    ambientes = AmbienteWidget()
+    sala_reuniao = Sala_de_reuniao()
     login.show()
     sys.exit(app.exec())
     
