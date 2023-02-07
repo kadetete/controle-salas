@@ -110,5 +110,28 @@ class Login():
         print('Login e senha invalidos')
         return False
       
-login1 = Login('Admin','12345')
-login1.incluir()
+class CadastroAmbientes():
+  def __init__(self, idambiente, descricao, tamanho):
+    self.__idambiente = idambiente
+    self.__descricao  = descricao
+    self.__tamanho    = tamanho
+
+  def incluir(self):
+    c = Conexao_mysql()
+    achou = False
+    sql = 'SELECT * from ambiente'
+    for linha in c.executa_DQL(sql):
+      if(f'{linha[0]}' == f'{self.__idambiente}'):
+        achou = True
+        
+    if(achou == False):       
+      sql  = f"INSERT INTO ambiente (idambiente, descricao, tamanho) "
+      sql += f"VALUES ({self.__idambiente}, '{self.__descricao}', '{self.__tamanho}')"
+      c.executa_DML(sql)
+
+  def alterar(self, idambiente, va2, va1):
+        c = Conexao_mysql()
+        sql  = f"UPDATE ambiente "
+        sql += f"SET {va1} = '{va2}' "
+        sql += f"WHERE idambiente = '{idambiente}'"
+        c.executa_DML(sql)

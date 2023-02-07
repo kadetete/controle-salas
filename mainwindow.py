@@ -154,6 +154,29 @@ class Sala_de_estudo(QWidget, Sala_de_estudo):
     def __init__(self) ->None:
         super(Sala_de_estudo,self).__init__()
         self.setupUi(self)
+
+        saladeestudo_1 = ['Sala de estudo com capacidade para 20 pessoas', 'tamanho','40m2']
+        self.label_description_class_meeting_01.setText(f'{saladeestudo_1[0]}, {saladeestudo_1[1]}: {saladeestudo_1[2]}')
+        sala_de_estudo_1 = CadastroAmbientes('401',f"{saladeestudo_1[0]}", f"{saladeestudo_1[2]}")
+        sala_de_estudo_1.incluir()
+        sala_de_estudo_1.alterar('401', f"{saladeestudo_1[0]}", 'descricao')
+        sala_de_estudo_1.alterar('401', f"{saladeestudo_1[2]}", 'tamanho')
+
+        saladeestudo_2 = ['Sala de estudo com capacidade para 25 pessoas', 'tamanho', '45m2']
+        self.label_description_class_meeting_02.setText(f'{saladeestudo_2[0]}, {saladeestudo_2[1]}: {saladeestudo_2[2]}')
+        sala_de_estudo_2 = CadastroAmbientes('402',f"{saladeestudo_2[0]}", f"{saladeestudo_2[2]}")
+        sala_de_estudo_2.incluir()
+        sala_de_estudo_2.alterar('402', f"{saladeestudo_2[0]}", 'descricao')
+        sala_de_estudo_2.alterar('402', f"{saladeestudo_2[2]}", 'tamanho')
+
+        saladeestudo_3 = ['Sala de estudo com capacidade para 30 pessoas', 'tamanho', '50m2']
+        self.label_7.setText(f'{saladeestudo_3[0]}, {saladeestudo_3[1]}: {saladeestudo_3[2]}')
+        sala_de_estudo_3 = CadastroAmbientes('403',f"{saladeestudo_3[0]}",f"{saladeestudo_3[2]}")
+        sala_de_estudo_3.incluir()
+        sala_de_estudo_3.alterar('403', f"{saladeestudo_3[0]}", 'descricao')
+        sala_de_estudo_3.alterar('403', f"{saladeestudo_3[2]}", 'tamanho')
+
+
         self.pushButton_salaestudo_voltar.clicked.connect(self.closedSaladeestudo)
         self.pushButton_reserve_class_meeting_01.clicked.connect(Ambiente.resevar)
         self.pushButton_reserve_class_meeting_02.clicked.connect(Ambiente.resevar)
