@@ -15,6 +15,8 @@ from cliente.ui_cliente import ClienteWidget
 from banco_de_dados.banco_de_dados import *
 from sala_de_reuniao.ui_sala_de_reuniao import Sala_de_reuniao
 from sala_de_estudo.ui_sala_de_estudo import Sala_de_estudo
+from tela_auditorios.ui_auditorios import WidgetAuditorio
+from laboratorio.ui_laboratorio import WidgetLaboratorio
 import datetime
 
 
@@ -35,6 +37,7 @@ class MainWindow(QMainWindow, MenuMainWindow):
 
     def redirectAuditorio(self):
         self.close()
+        auditorio.show()
         
     def redirectSalaReuniao(self):
         self.close()
@@ -42,6 +45,7 @@ class MainWindow(QMainWindow, MenuMainWindow):
 
     def redirectLaboratorio(self):
         self.close()
+        laboratorio.show()
 
     def redirectSalaEstudo(self):
         self.close()
@@ -144,7 +148,7 @@ class ClienteWidget(QWidget, ClienteWidget):
         return self.cliente1
     
 class Ambiente():
-    def resevar(self):
+    def reservar(self):
         cliente.show()
         data, time_inicio, time_fim = CalendarioWidget.data_time_escolido()
         dados_cliente = cliente.push_button_register.clicked.connect(cliente.cliente_atual())
@@ -155,10 +159,10 @@ class Sala_de_estudo(QWidget, Sala_de_estudo):
         super(Sala_de_estudo,self).__init__()
         self.setupUi(self)
         self.pushButton_salaestudo_voltar.clicked.connect(self.closedSaladeestudo)
-        self.pushButton_reserve_class_meeting_01.clicked.connect(Ambiente.resevar)
-        self.pushButton_reserve_class_meeting_02.clicked.connect(Ambiente.resevar)
-        self.pushButton_reserve_meeting_03.clicked.connect(Ambiente.resevar)
-        self.pushButton_reserve_class_meeting_04.clicked.connect(Ambiente.resevar)
+        self.pushButton_reserve_class_meeting_01.clicked.connect(Ambiente.reservar)
+        self.pushButton_reserve_class_meeting_02.clicked.connect(Ambiente.reservar)
+        self.pushButton_reserve_meeting_03.clicked.connect(Ambiente.reservar)
+        self.pushButton_reserve_class_meeting_04.clicked.connect(Ambiente.reservar)
 
 
 
@@ -171,6 +175,15 @@ class Sala_de_reuniao(QWidget, Sala_de_reuniao):
         super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
 
+class Auditorios(QWidget, WidgetAuditorio):
+    def __init__(self) -> None:
+        super(Auditorios, self).__init__()
+        self.setupUi(self)
+
+class Laboratorio(QWidget, WidgetLaboratorio):
+    def __init__(self) -> None:
+        super(Laboratorio, self).__init__()
+        self.setupUi(self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
@@ -180,6 +193,8 @@ if __name__ == "__main__":
     cliente = ClienteWidget()
     sala_reuniao = Sala_de_reuniao()
     sala_estudo = Sala_de_estudo()
+    auditorio = Auditorios()
+    laboratorio = Laboratorio()
     login.show()
     sys.exit(app.exec())
     
