@@ -113,7 +113,7 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         mainwindow.show()
         self.close()
 
-    def data_time_escolido(self):
+    def data_time_escolhido(self):
         data_time = [self.data_escolida, self.horario_inicio_escolido, self.horario_final_escolido]
         return data_time
 
