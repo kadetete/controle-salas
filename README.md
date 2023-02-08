@@ -79,28 +79,28 @@ Baseado no prototipo de telas foi feito o diagrama UML de caso de uso onde nele 
 ### Tela 01 - Login
 Nessa tela o usuário do sistema, projetado para ser um funcionário de uma empresa, irá entrar com usuário e senha para acessar a área de agendamento de salas. O programa compara as informações digitadas com as presentes no banco e valida os dados para que o software possa ser utilizado.
 
-![Tela do login](img/janela_login.jpg)
+![Tela do login](img/telalogin_final.png)
 
 <div id='telacalen'/>
 
 ### Tela 02 - Calendário
 Após o login o funcionário é redirecionado para a tela de calendário(que segue abaixo), onde é selecionado a data e horário para reserva da sala. O usuário só pode fazer reservas a partir do dia atual.
 
-![Tela do calendário](img/demonstracao_calendario.png)
+![Tela do calendário](img/telacalen_final.png)
 
 <div id='telamenu'/>
 
 ### Tela 03 - Menu
 Nesta tela principal o funcionário/usuário do sistema terá a opção de escolher o ambiente que será reservado.
 
-![Tela Principal](img/tela_principal.png)
+![Tela Principal](img/telamenu_final.png)
 
 <div id='telaambiente'/>
 
 ### Tela 04 - Ambientes
 A tela apresenta a interface dos ambientes e dispões de funcionalidade de: reserva, edição e exclusão das salas, além de um botão para adicionar uma nova.
 
-![Tela de Ambientes](img/tela_04_v6.png)
+![Tela da sala de estudo](img/telasaladeestudo_final.png)
 
 <div id='telacliente'/>
 
