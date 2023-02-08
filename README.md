@@ -19,6 +19,7 @@
     - [Tela menu](#telamenu)
     - [Telas de ambientes](#telaambiente)
     - [Tela de cadastro de clientes](#telacliente)
+    - [Tela de edição de salas](#telaedicao)
     - [Tela de relatório de salas reservadas](#telarelatorio)    
     
 6. [Referências](#ref)
@@ -69,6 +70,7 @@ Baseado no prototipo de telas foi feito o diagrama UML de caso de uso onde nele 
 <div id='diagclasse'/>
 
 ### Diagrama de classe
+O diagrama de classe feito analisa as classes do código e desenha suas relações de herança e associação.
 
 ![diagrama classe](img/diagramaclasse_final.png)
 
@@ -103,20 +105,30 @@ Nesta tela principal o funcionário/usuário do sistema terá a opção de escol
 A tela apresenta a interface dos ambientes e dispões de funcionalidade de: reserva, edição e exclusão das salas, além de um botão para adicionar uma nova.
 
 ![Tela da sala de estudo](img/telasaladeestudo_final.png)
+![Tela de auditório](img/telaauditorio_final.png)
+![Tela de sala de reunião](img/telareuniao_final.png)
+![Tela de lab](img/telalab_final.png)
 
 <div id='telacliente'/>
 
 ### Tela 05 - Cadastro de clientes
 Aqui fazemos o cadastro do cliente que deseja reservar alguma das salas da empresa.
 
-![Tela de Ambientes](img/cliente_cadastro.png)
+![Tela de cadastro de clientes](img/cliente_cadastro.png)
+
+<div id='telaedicao'/>
+
+### Tela 06 - Edição de salas
+Tela que aparece após clicar na opção 'editar' de uma das telas de ambiente. Aqui, aparecerá no topo o tipo de ambiente que você está editando, e o logo abaixo a sala específica. Nos campos são inseridos o tamanho e a descrição para serem modificadas.
+
+![Tela de edição de salas](img/telaedicao_final.png)
 
 <div id='telarelatorio'/>
 
-### Tela 06 - Relatorio de Salas Reservadas
+### Tela 07 - Relatorio de Salas Reservadas
 Na última tela desenvolvida, é mostrada a relação das reservas realizadas no sistema e armazenadas no banco de dados.
 
-![Tela de Ambientes](img/relatoriodesalas.png)
+![Tela de relatório](img/relatoriodesalas.png)
 
 <div id='ref'/>
 
