@@ -76,16 +76,10 @@ class CalendarioWidget(QWidget, WidgetCalendario):
     def __init__(self) ->None:
         super(CalendarioWidget,self).__init__()
         data = datetime.date.today()
-        ano_min = data.year
-        mes_min = data.month
-        dia_min = data.day
         hora_atual = datetime.datetime.now()
-        hora_min = hora_atual.hour
-        min_min = hora_atual.minute
-        seg_min = hora_atual.second
-        data_min = QDate(ano_min, mes_min, dia_min)
-        horario_min = QTime(hora_min, min_min, seg_min)
-        horario_max = QTime(hora_min + 1, min_min, seg_min)
+        data_min = QDate(data.year, data.month, data.day)
+        horario_min = QTime(hora_atual.hour, hora_atual.minute, hora_atual.second)
+        horario_max = QTime(hora_atual.hour + 1, hora_atual.minute, hora_atual.second)
         self.setupUi(self)
         self.calendarWidget.setMinimumDate(data_min)
         if self.calendarWidget.selectedDate() == data_min:
