@@ -137,3 +137,5 @@ Na última tela desenvolvida, é mostrada a relação das reservas realizadas no
 * Ferramenta utilizada para organização: [Trello](https://trello.com/home)
 * Ferramenta utilizada para criação das interfaces gráficas: [Qt Creator](https://www.qt.io/product/development-tools)
 * A linguagem utilizada para desenvolvimento foi Python com integração ao Qt
+
+###### OBS: Todos os integrantes participaram ativamente de todos os processos de desenvolvimento.
