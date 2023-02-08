@@ -25,264 +25,16 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QWidget" name="widget_class_meeting_04" native="true">
+  <widget class="QWidget" name="widget_lab01" native="true">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>360</y>
-     <width>269</width>
-     <height>191</height>
-    </rect>
-   </property>
-   <widget class="QLabel" name="subtitle_class_meeting_04">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>106</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Versa Versa</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>sala 04</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_reserve_class_meeting_04">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>reservar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_delete_class_meeting_04">
-    <property name="geometry">
-     <rect>
-      <x>95</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>excluir</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_edit_class_meeting_04">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>editar</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_description_class_meeting_04">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>241</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Versa Versa</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;34m² com capacidade para 20 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QLabel" name="subtitle_environments_meeting">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>110</y>
-     <width>545</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>16777215</width>
-     <height>25</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>Versa Versa</family>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;salas de reunião&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="title_sicoges_auditorium">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>50</y>
-     <width>561</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>16777215</width>
-     <height>50</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>Versa Versa</family>
-     <pointsize>24</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;SICOGES&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="widget_class_meeting_02" native="true">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>160</y>
-     <width>269</width>
-     <height>192</height>
-    </rect>
-   </property>
-   <widget class="QLabel" name="subtitle_class_meeting_02">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>87</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Versa Versa</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Sala 02</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_reserve_class_meeting_02">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>reservar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_delete_class_meeting_02">
-    <property name="geometry">
-     <rect>
-      <x>95</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>exluir</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_edit_class_meeting_02">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>140</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>editar </string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_description_class_meeting_02">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>241</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Versa Versa</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;37m² com capacidade para 25 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QWidget" name="widget_class_meeting_01" native="true">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>160</y>
+     <x>80</x>
+     <y>140</y>
      <width>270</width>
      <height>192</height>
     </rect>
    </property>
-   <widget class="QLabel" name="subtitle_class_meeting_01">
+   <widget class="QLabel" name="subtitle_lab01">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -298,10 +50,10 @@
      </font>
     </property>
     <property name="text">
-     <string>Sala 01</string>
+     <string>Lab 01</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_reserve_class_meeting_01">
+   <widget class="QPushButton" name="pushButton_reserve_lab01">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -314,7 +66,7 @@
      <string>reservar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_delete_class_meeting_01">
+   <widget class="QPushButton" name="pushButton_delete_lab01">
     <property name="geometry">
      <rect>
       <x>95</x>
@@ -327,7 +79,7 @@
      <string>excluir</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_edit_class_meeting_01">
+   <widget class="QPushButton" name="pushButton_edit_lab01">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -340,7 +92,7 @@
      <string>editar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_description_class_meeting_01">
+   <widget class="QLabel" name="label_description_lab01">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -359,7 +111,7 @@
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;54m² com campacidade para 45 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;DESCRIÇÃO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -372,16 +124,272 @@
     </property>
    </widget>
   </widget>
-  <widget class="QWidget" name="widget_class_meeting_03" native="true">
+  <widget class="QFrame" name="gridFrame">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>360</y>
+     <x>35</x>
+     <y>0</y>
+     <width>741</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QPushButton" name="pushButton_lab_voltar">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Versa</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>voltar</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_33">
+      <property name="font">
+       <font>
+        <family>Versa</family>
+        <pointsize>24</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>                           SICOGES</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_lab04" native="true">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>350</y>
+     <width>269</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="subtitle_lab04">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>106</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Versa Versa</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>lab 04</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_reserve_lab04">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>reservar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_delete_lab04">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>excluir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_edit_lab04">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>editar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_description_lab04">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Versa Versa</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;DESCRIÇÃO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="horizontalFrame_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>731</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_12">
+    <item>
+     <widget class="QLabel" name="subtitle_lab">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Versa Versa</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Laboratórios&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_adicionar_lab">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>25</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Versa Versa</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_13">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Adicionar Nova Sala</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_lab03" native="true">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>350</y>
      <width>270</width>
      <height>191</height>
     </rect>
    </property>
-   <widget class="QLabel" name="subtitle_sl_pipa">
+   <widget class="QLabel" name="subtitle_lab03">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -397,10 +405,10 @@
      </font>
     </property>
     <property name="text">
-     <string>sala 03</string>
+     <string>lab 03</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_reserve_class_meeting_03">
+   <widget class="QPushButton" name="pushButton_reserve_lab03">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -413,7 +421,7 @@
      <string>reservar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="pushButton_delete_lab03">
     <property name="geometry">
      <rect>
       <x>95</x>
@@ -426,7 +434,7 @@
      <string>excluir</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_edit_class_meeting_03">
+   <widget class="QPushButton" name="pushButton_edit_lab03">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -439,7 +447,7 @@
      <string>editar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="label_description_lab03">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -458,7 +466,7 @@
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;43m² com capacidade para 30 pessoas&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;DESCRIÇÃO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -471,11 +479,110 @@
     </property>
    </widget>
   </widget>
-  <widget class="QFrame" name="footer_frame_auditorium">
+  <widget class="QWidget" name="widget_lab02" native="true">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>560</y>
+     <x>470</x>
+     <y>140</y>
+     <width>269</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="subtitle_lab02">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>87</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Versa Versa</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>lab 02</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_reserve_lab02">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>reservar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_delete_lab02">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>excluir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_edit_lab02">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>140</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>editar </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_description_lab02">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Versa Versa</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;DESCRIÇÃO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="footer_frame_auditorium_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>510</y>
      <width>661</width>
      <height>26</height>
     </rect>
@@ -486,7 +593,7 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
     <property name="spacing">
      <number>10</number>
     </property>
@@ -503,7 +610,7 @@
      <number>2</number>
     </property>
     <item>
-     <widget class="QLabel" name="footer_icon_facebook">
+     <widget class="QLabel" name="footer_icon_facebook_3">
       <property name="maximumSize">
        <size>
         <width>20</width>
@@ -514,7 +621,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/github.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -525,7 +632,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="footer_icon_likedin">
+     <widget class="QLabel" name="footer_icon_likedin_3">
       <property name="maximumSize">
        <size>
         <width>20</width>
@@ -536,7 +643,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/linkedin.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -544,7 +651,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="footer_icon_git">
+     <widget class="QLabel" name="footer_icon_git_3">
       <property name="maximumSize">
        <size>
         <width>20</width>
@@ -555,7 +662,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png</pixmap>
+       <pixmap>../../../../../layzacecato-dev_my_projects/github/reposity06_poo_2_bim/controle-salas/ambientes/icons/facebook-app-symbol.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
