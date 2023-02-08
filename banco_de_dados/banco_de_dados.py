@@ -129,9 +129,38 @@ class CadastroAmbientes():
       sql += f"VALUES ({self.__idambiente}, '{self.__descricao}', '{self.__tamanho}')"
       c.executa_DML(sql)
 
-  def alterar(self, idambiente, va2, va1):
+  def alterar(self):
         c = Conexao_mysql()
         sql  = f"UPDATE ambiente "
-        sql += f"SET {va1} = '{va2}' "
-        sql += f"WHERE idambiente = '{idambiente}'"
+        sql += f"SET descricao = '{self.__descricao}', tamanho = '{self.__tamanho}' "
+        sql += f"WHERE idambiente = {self.__idambiente}"
         c.executa_DML(sql)
+
+class Reseva():
+  def __init__(self, idcliente, idambiente, data_reserva, horario_inicio, horario_final):
+    self.__idcliente      = idcliente
+    self.__idambiente     = idambiente
+    self.__data_reserva   = data_reserva
+    self.__horario_inicio = horario_inicio
+    self.__horario_final  = horario_final
+  def varificar_resevas(self):
+      achou = False
+      c = Conexao_mysql()
+      sql = 'SELECT * from reserva'
+      for linha in c.executa_DQL(sql):
+        if(f'{linha[1]}' == f'{self.__idcliente}'):
+          if(f'{linha[3]}' == f'{self.__data_reserva}'):
+            t = linha[4] 
+            int()
+            if(linha[4] >= self.__horario_final  ):
+              achou = True
+            print('Login e senha validos')
+            return True
+          else:
+            print('Senha invalida')
+            return False 
+      if(achou == False):
+        sql  = f"INSERT INTO reserva (idcliente, idambiente, data_reserva, horario_inicio, horario_final) "
+        sql += f"VALUES ('{self.__idcliente}', '{self.__idambiente}', '{self.__data_reserva}', '{self.__horario_inicio}', '{self.__horario_final}')"
+        c.executa_DML(sql)
+        return False

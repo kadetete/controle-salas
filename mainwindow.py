@@ -17,6 +17,7 @@ from sala_de_reuniao.ui_sala_de_reuniao import Sala_de_reuniao
 from sala_de_estudo.ui_sala_de_estudo import Sala_de_estudo
 from tela_auditorios.ui_auditorios import WidgetAuditorio
 from laboratorio.ui_laboratorio import WidgetLaboratorio
+from edicao_de_ambientes.ui_edicao_de_ambientes import EdicaoAmbientesWidget
 import datetime
 
 
@@ -50,6 +51,7 @@ class MainWindow(QMainWindow, MenuMainWindow):
     def redirectSalaEstudo(self):
         self.close()
         sala_estudo.show()
+        edicao_ambiente.show()
 
 class LoginWidget(QWidget, LoginWidget):
     def __init__(self) ->None:
@@ -112,7 +114,8 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         self.close()
 
     def data_time_escolido(self):
-        return self.data_escolida, self.horario_inicio_escolido, self.horario_final_escolido
+        data_time = [self.data_escolida, self.horario_inicio_escolido, self.horario_final_escolido]
+        return data_time
 
     def closedCalendario(self):
         login.show()
@@ -142,61 +145,66 @@ class ClienteWidget(QWidget, ClienteWidget):
         if (matricula != '' and nome != ""):
             self.cliente1 = Cliente(matricula, nome, sobrenome)
             self.cliente1.incluir()
+            self.id_cliente = matricula
             self.close()
 
     def cliente_atual(self):
-        return self.cliente1
-    
-class Ambiente():
-    def reservar(self):
-        cliente.show()
-        data, time_inicio, time_fim = CalendarioWidget.data_time_escolido()
-        dados_cliente = cliente.push_button_register.clicked.connect(cliente.cliente_atual())
-        
+        return self.id_cliente 
 
-class Sala_de_estudo(QWidget, Sala_de_estudo):
+class EdicaoAmbientesWidget(QWidget, EdicaoAmbientesWidget):
     def __init__(self) ->None:
-        super(Sala_de_estudo,self).__init__()
+        super(EdicaoAmbientesWidget, self).__init__()
         self.setupUi(self)
 
-        saladeestudo_1 = ['Sala de estudo com capacidade para 20 pessoas', 'tamanho','40m2']
-        self.label_description_class_meeting_01.setText(f'{saladeestudo_1[0]}, {saladeestudo_1[1]}: {saladeestudo_1[2]}')
-        sala_de_estudo_1 = CadastroAmbientes('401',f"{saladeestudo_1[0]}", f"{saladeestudo_1[2]}")
-        sala_de_estudo_1.incluir()
-        sala_de_estudo_1.alterar('401', f"{saladeestudo_1[0]}", 'descricao')
-        sala_de_estudo_1.alterar('401', f"{saladeestudo_1[2]}", 'tamanho')
+    def reservar(self, id_ambiente):
+        #data_time = calendario.pushButtonConfirmar.clicked.connect(calendario.data_time_escolido()) 
+        cliente.show()
+        id_cliente = cliente.push_button_register.clicked.connect(cliente.cliente_atual())
+        #Reseva(id_cliente, id_ambiente, data_time[0], data_time[1], data_time[2]).varificar_resevas()
+        
+    def editar(self, id_ambiente):
+        edicao_ambiente.show()
+        descricao = self.textEdit_descricao_ambiente
+        tamanho = self.lineEdit__tamanho_ambiente
+        self.butaoConfirmar.clicked.connect(CadastroAmbientes(id_ambiente, descricao, tamanho).alterar())
+        self.botaoCancelar.clicked.connect(self.closedAmbiente())
 
-        saladeestudo_2 = ['Sala de estudo com capacidade para 25 pessoas', 'tamanho', '45m2']
-        self.label_description_class_meeting_02.setText(f'{saladeestudo_2[0]}, {saladeestudo_2[1]}: {saladeestudo_2[2]}')
-        sala_de_estudo_2 = CadastroAmbientes('402',f"{saladeestudo_2[0]}", f"{saladeestudo_2[2]}")
-        sala_de_estudo_2.incluir()
-        sala_de_estudo_2.alterar('402', f"{saladeestudo_2[0]}", 'descricao')
-        sala_de_estudo_2.alterar('402', f"{saladeestudo_2[2]}", 'tamanho')
+    def checkAmbiente(self):
+        pass
 
-        saladeestudo_3 = ['Sala de estudo com capacidade para 30 pessoas', 'tamanho', '50m2']
-        self.label_7.setText(f'{saladeestudo_3[0]}, {saladeestudo_3[1]}: {saladeestudo_3[2]}')
-        sala_de_estudo_3 = CadastroAmbientes('403',f"{saladeestudo_3[0]}",f"{saladeestudo_3[2]}")
-        sala_de_estudo_3.incluir()
-        sala_de_estudo_3.alterar('403', f"{saladeestudo_3[0]}", 'descricao')
-        sala_de_estudo_3.alterar('403', f"{saladeestudo_3[2]}", 'tamanho')
-
-
-        self.pushButton_salaestudo_voltar.clicked.connect(self.closedSaladeestudo)
-        self.pushButton_reserve_class_meeting_01.clicked.connect(Ambiente.reservar)
-        self.pushButton_reserve_class_meeting_02.clicked.connect(Ambiente.reservar)
-        self.pushButton_reserve_meeting_03.clicked.connect(Ambiente.reservar)
-        self.pushButton_reserve_class_meeting_04.clicked.connect(Ambiente.reservar)
-
-
-
-    def closedSaladeestudo(self):
-        mainwindow.show()
+    def closedAmbiente(self):
         self.close()
+        
 
 class Sala_de_reuniao(QWidget, Sala_de_reuniao):
     def __init__(self) ->None:
         super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
+
+class Sala_de_estudo(QWidget, Sala_de_estudo):
+    def __init__(self) ->None:
+        super(Sala_de_estudo, self).__init__()
+        self.setupUi(self)
+        #saladeestudo_1 = ['401', 'Sala de estudo com capacidade para 20 pessoas', '40m2']
+        self.pushButton_edit_class_meeting_01.clicked.connect(self.edicao('401'))
+        #self.label_description_class_meeting_01.setText()
+        #saladeestudo_2 = ['402', 'Sala de estudo com capacidade para 25 pessoas', '45m2']
+        self.pushButton_edit_class_meeting_02.clicked.connect(self.edicao('402'))
+        #self.label_description_class_meeting_02.setText()
+        #saladeestudo_3 = ['403', 'Sala de estudo com capacidade para 30 pessoas', '50m2']
+        self.pushButton_edit_class_meeting_03.clicked.connect(self.edicao('403'))
+        #self.label_description_class_meeting_03.setText()
+        self.pushButton_salaestudo_voltar.clicked.connect(self.closedSaladeestudo)
+        #self.pushButton_reserve_class_meeting_01.clicked.connect(edicao_ambiente.reservar('401'))
+        #self.pushButton_reserve_class_meeting_02.clicked.connect(edicao_ambiente.reservar('402'))
+        #self.pushButton_reserve_class_meeting_03.clicked.connect(edicao_ambiente.reservar('403'))
+        #self.pushButton_reserve_class_meeting_04.clicked.connect(edicao_ambiente.reservar('404'))
+    def edicao(self, id):
+        edicao_ambiente.editar(id)
+
+    def closedSaladeestudo(self):
+        mainwindow.show()
+        self.close()
 
 class Auditorios(QWidget, WidgetAuditorio):
     def __init__(self) -> None:
@@ -216,10 +224,11 @@ class Laboratorio(QWidget, WidgetLaboratorio):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    mainwindow = MainWindow()
     login = LoginWidget()
     calendario = CalendarioWidget()
     cliente = ClienteWidget()
+    mainwindow = MainWindow()
+    edicao_ambiente = EdicaoAmbientesWidget()
     sala_reuniao = Sala_de_reuniao()
     sala_estudo = Sala_de_estudo()
     auditorio = Auditorios()
