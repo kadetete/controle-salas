@@ -28,11 +28,11 @@
 
 ## Integrantes
 
-* Alycson Denis Pereira Moreira
-* Layza Cecato Gomes Amaro
-* Alessandro Nunes Silva Cruz Filho
-* [Guilherme Cadete Matias](https://github/kadetete)
-* Rafael Augusto Soares da Silva
+* [Alycson Denis Pereira Moreira](https://github.com/Alycson-Moreira)
+* [Layza Cecato Gomes Amaro](https://github.com/layzacecato-dev)
+* [Alessandro Nunes Silva Cruz Filho](https://github.com/AlessandroNunes10)
+* [Guilherme Cadete Matias](https://github.com/kadetete)
+* [Rafael Augusto Soares da Silva](https://github.com/Rafael)
 
 <div id='proposito'/>
 
@@ -78,36 +78,42 @@ Baseado no prototipo de telas foi feito o diagrama UML de caso de uso onde nele 
 
 ### Tela 01 - Login
 Nessa tela o usuário do sistema, projetado para ser um funcionário de uma empresa, irá entrar com usuário e senha para acessar a área de agendamento de salas. O programa compara as informações digitadas com as presentes no banco e valida os dados para que o software possa ser utilizado.
+
 ![Tela do login](img/janela_login.jpg)
 
 <div id='telacalen'/>
 
 ### Tela 02 - Calendário
 Após o login o funcionário é redirecionado para a tela de calendário(que segue abaixo), onde é selecionado a data e horário para reserva da sala. O usuário só pode fazer reservas a partir do dia atual.
+
 ![Tela do calendário](img/demonstracao_calendario.png)
 
 <div id='telamenu'/>
 
 ### Tela 03 - Menu
 Nesta tela principal o funcionário/usuário do sistema terá a opção de escolher o ambiente que será reservado.
+
 ![Tela Principal](img/tela_principal.png)
 
 <div id='telaambiente'/>
 
 ### Tela 04 - Ambientes
 A tela apresenta a interface dos ambientes e dispões de funcionalidade de: reserva, edição e exclusão das salas, além de um botão para adicionar uma nova.
+
 ![Tela de Ambientes](img/tela_04_v6.png)
 
 <div id='telacliente'/>
 
 ### Tela 05 - Cadastro de clientes
 Aqui fazemos o cadastro do cliente que deseja reservar alguma das salas da empresa.
+
 ![Tela de Ambientes](img/cliente_cadastro.png)
 
 <div id='telarelatorio'/>
 
 ### Tela 06 - Relatorio de Salas Reservadas
 Na última tela desenvolvida, é mostrada a relação das reservas realizadas no sistema e armazenadas no banco de dados.
+
 ![Tela de Ambientes](img/relatoriodesalas.png)
 
 <div id='ref'/>
