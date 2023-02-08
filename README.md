@@ -1,4 +1,4 @@
-# Sistema de Controle e Gestão de Salas
+# SICOGES - Sistema de Controle e Gestão de Salas
 
 *******
 **Sumário**
@@ -69,6 +69,8 @@ Baseado no prototipo de telas foi feito o diagrama UML de caso de uso onde nele 
 <div id='diagclasse'/>
 
 ### Diagrama de classe
+
+![diagrama classe](img/diagramaclasse_final.png)
 
 <div id='telas'/>
 
