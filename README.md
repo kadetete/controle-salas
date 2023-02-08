@@ -47,13 +47,13 @@ Reunimos a equipe para decidir qual aplicativo seria usado para auxiliar no gere
 
 * [Layza Cecato](https://github.com/layzacecato-dev), adotamos o aplicativo [**TRELLO**](https://trello.com/home) para esta função como sugestão.
 
-* Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/) como sugestão de [Alycson Moreira](https://github.com/Alycson-Moreira)
+* Diagrama UML de caso de uso foi feito na plataforma [**CREATELY**](https://creately.com/) como sugestão de [Alycson Moreira](https://github.com/Alycson-Moreira).
 
-* O Qt Designer foi ultilizado com ferramenta para criação das interfaces 
+* O Qt Designer foi ultilizado com ferramenta para criação das interfaces.
 
-* O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes
+* O WhatsApp foi utilizado como ferramenta de comunicação rápida entre os integrantes.
 
-* Para a implementação do banco de dados foi ultilizado o sgbd MySQL WORKBENCH
+* Para a implementação do banco de dados foi ultilizado o Sistema Gerenciador de Banco de Dados (SGBD) MySQL Workbench.
 
 <div id='diagramas'/>
 
