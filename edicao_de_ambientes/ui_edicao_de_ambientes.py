@@ -19,7 +19,11 @@ from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
     QPushButton, QSizePolicy, QSpacerItem, QTextEdit,
     QVBoxLayout, QWidget)
 
+<<<<<<< Updated upstream
 class Ambientes(object):
+=======
+class EdicaoAmbientes(object):
+>>>>>>> Stashed changes
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
@@ -150,7 +154,7 @@ class Ambientes(object):
     # setupUi
 
     def retranslateUi(self, Widget):
-        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Login", None))
+        Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Edição de ambientes", None))
         self.label_ambiente_edit.setText(QCoreApplication.translate("Widget", u"ambiente_edit", None))
         self.label_sala_edit.setText(QCoreApplication.translate("Widget", u"Sala_edit", None))
         self.lineEdit__tamanho_ambiente.setPlaceholderText(QCoreApplication.translate("Widget", u"Digite aqui o novo tamanho da sala", None))
