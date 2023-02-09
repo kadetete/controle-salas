@@ -17,12 +17,8 @@ from sala_de_reuniao.ui_sala_de_reuniao import Sala_de_reuniao
 from sala_de_estudo.ui_sala_de_estudo import Sala_de_estudo
 from tela_auditorios.ui_auditorios import Auditorios
 from laboratorio.ui_laboratorio import Laboratorio
-<<<<<<< Updated upstream
 from edicao_de_ambientes.ui_edicao_de_ambientes import Ambientes
 from relacaoreservas.ui_relacaoreservas import RelacaoReservas
-=======
-from edicao_de_ambientes.ui_edicao_de_ambientes import EdicaoAmbientes
->>>>>>> Stashed changes
 import datetime
 
 class LoginWidget(QWidget, LoginWidget):
@@ -61,13 +57,7 @@ class CalendarioWidget(QWidget, WidgetCalendario):
             self.timeEditHoraSaida.setMinimumTime(self.horario_max)
         else:
             self.timeEditHoraEntrada.setMinimumTime(QTime(0, 0, 0))
-<<<<<<< Updated upstream
             self.timeEditHoraEntrada.setMinimumTime(QTime(0, 0, 0))
-=======
-            self.timeEditHoraEntrada.setMinimumTime(QTime(1, 0, 0))
-        self.pushButtonConfirmar.clicked.connect(self.confirmar)
-        self.pushButtonSair.clicked.connect(lambda: self.closedCalendario(login))
->>>>>>> Stashed changes
 
     def confirmar(self):
         calendario = self.calendarWidget.selectedDate()
@@ -88,11 +78,6 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         data_time = [self.data_escolida, self.horario_inicio_escolido, self.horario_final_escolido]
         ambiente.dataTime(data_time)
 
-<<<<<<< Updated upstream
-=======
-    def closedCalendario(self, janela):
-        janela.show()
->>>>>>> Stashed changes
 
     def formatarData(self, inicio, fim):
         self.inicio = inicio
@@ -102,7 +87,6 @@ class CalendarioWidget(QWidget, WidgetCalendario):
         if self.fim < 10:
             self.fim = f'0{self.fim}'
         return self.inicio, self.fim
-<<<<<<< Updated upstream
 
 class MainWindow(QMainWindow, MenuMainWindow):
     def __init__(self) ->None:
@@ -121,18 +105,22 @@ class Sala_de_reuniao(QWidget, Sala_de_reuniao):
         super(Sala_de_reuniao, self).__init__()
         self.setupUi(self)
         self.pushButton_reserve_reuniao01.clicked.connect(lambda: ambiente.reservar('101'))
+        self.pushButton_reserve_reuniao01.clicked.connect(lambda: closed(self))
         self.pushButton_edit_reuniao01.clicked.connect(lambda: ambiente.editar('101'))
         self.pushButton_edit_reuniao01.clicked.connect(lambda: self.label_description_reuniao01.setText(self.visual('101')))     
 
         self.pushButton_reserve_reuniao02.clicked.connect(lambda: ambiente.reservar('102'))
+        self.pushButton_reserve_reuniao02.clicked.connect(lambda: closed(self))
         self.pushButton_reserve_reuniao02.clicked.connect(lambda: ambiente.editar('102'))
         self.pushButton_reserve_reuniao02.clicked.connect(lambda: self.label_description_reuniao02.setText(self.visual('102')))     
 
         self.pushButton_reserve_reuniao03.clicked.connect(lambda: ambiente.reservar('103'))
+        self.pushButton_reserve_reuniao03.clicked.connect(lambda: closed(self))
         self.pushButton_edit_reuniao03.clicked.connect(lambda: ambiente.editar('103'))
         self.pushButton_edit_reuniao03.clicked.connect(lambda: self.label_description_reuniao03.setText(self.visual('103')))     
 
         self.pushButton_reserve_reuniao04.clicked.connect(lambda: ambiente.reservar('104'))
+        self.pushButton_reserve_reuniao04.clicked.connect(lambda: closed(self))
         self.pushButton_edit_reuniao04.clicked.connect(lambda: ambiente.editar('104'))
         self.pushButton_edit_reuniao04.clicked.connect(lambda: self.label_description_reuniao04.setText(self.visual('104')))     
 
@@ -146,18 +134,22 @@ class Auditorios(QWidget, Auditorios):
         super(Auditorios, self).__init__()
         self.setupUi(self)
         self.pushButton_reserve_class_meeting_2.clicked.connect(lambda: ambiente.reservar('201'))
+        self.pushButton_reserve_class_meeting_2.clicked.connect(lambda: closed(self))
         self.pushButton_edit_class_meeting_2.clicked.connect(lambda: ambiente.editar('201'))
         self.pushButton_edit_class_meeting_2.clicked.connect(lambda: self.label_description_class_meeting_2.setText(self.visual('201')))     
 
         self.pushButton_reserve_class_meeting_3.clicked.connect(lambda: ambiente.reservar('202'))
+        self.pushButton_reserve_class_meeting_3.clicked.connect(lambda: closed(self))
         self.pushButton_edit_class_meeting_3.clicked.connect(lambda: ambiente.editar('202'))
         self.pushButton_edit_class_meeting_3.clicked.connect(lambda: self.label_description_class_meeting_3.setText(self.visual('202')))     
 
         self.pushButton_reserve_class_meeting_4.clicked.connect(lambda: ambiente.reservar('203'))
+        self.pushButton_reserve_class_meeting_4.clicked.connect(lambda: closed(self))
         self.pushButton_edit_class_meeting_4.clicked.connect(lambda: ambiente.editar('203'))
         self.pushButton_edit_class_meeting_4.clicked.connect(lambda: self.label_description_class_meeting_4.setText(self.visual('203')))     
 
         self.pushButton_reserve_class_meeting_5.clicked.connect(lambda: ambiente.reservar('204'))
+        self.pushButton_reserve_class_meeting_5.clicked.connect(lambda: closed(self))
         self.pushButton_edit_class_meeting_5.clicked.connect(lambda: ambiente.editar('204'))
         self.pushButton_edit_class_meeting_5.clicked.connect(lambda: self.label_description_class_meeting_5.setText(self.visual('204')))     
 
@@ -170,18 +162,22 @@ class Laboratorio(QWidget, Laboratorio):
         super(Laboratorio, self).__init__()
         self.setupUi(self)
         self.pushButton_reserve_lab01.clicked.connect(lambda: ambiente.reservar('301'))
+        self.pushButton_reserve_lab01.clicked.connect(lambda: closed(self))
         self.pushButton_edit_lab01.clicked.connect(lambda: ambiente.editar('301'))
         self.pushButton_edit_lab01.clicked.connect(lambda: self.label_description_lab01.setText(self.visual('301')))     
 
         self.pushButton_reserve_lab02.clicked.connect(lambda: ambiente.reservar('302'))
+        self.pushButton_reserve_lab02.clicked.connect(lambda: closed(self))
         self.pushButton_edit_lab02.clicked.connect(lambda: ambiente.editar('302'))
-        self.pushButton_edit_lab02.clicked.connect(lambda: self.label_description_lab02.setText(self.visual('302')))     
+        self.pushButton_edit_lab02.clicked.connect(lambda: self.label_description_lab02.setText(self.visual('302')))   
 
         self.pushButton_reserve_lab03.clicked.connect(lambda: ambiente.reservar('303'))
+        self.pushButton_reserve_lab03.clicked.connect(lambda: closed(self))
         self.pushButton_edit_lab03.clicked.connect(lambda: ambiente.editar('303'))
         self.pushButton_edit_lab03.clicked.connect(lambda: self.label_description_lab03.setText(self.visual('303')))     
 
         self.pushButton_reserve_lab04.clicked.connect(lambda: ambiente.reservar('304'))
+        self.pushButton_reserve_lab04.clicked.connect(lambda: closed(self))
         self.pushButton_edit_lab04.clicked.connect(lambda: ambiente.editar('304'))
         self.pushButton_edit_lab04.clicked.connect(lambda: self.label_description_lab04.setText(self.visual('304')))     
 
@@ -283,10 +279,6 @@ class ClienteWidget(QWidget, ClienteWidget):
         super(ClienteWidget,self).__init__()
         self.setupUi(self)
         self.push_button_register.clicked.connect(lambda: self.checkCliente())
-=======
-  
-
->>>>>>> Stashed changes
 
     def checkCliente(self):
         self.cliente1 = ''
@@ -299,106 +291,20 @@ class ClienteWidget(QWidget, ClienteWidget):
             ambiente.confirmarResevar(self.cliente1.id())
             self.close()
 
-<<<<<<< Updated upstream
 class RelacaoReservas(QWidget, RelacaoReservas):
     def __init__(self) ->None:
         super(RelacaoReservas,self).__init__()
-=======
-    def cliente_atual(self):
-        return self.id_cliente 
-
-class MainWindow(QMainWindow, MenuMainWindow):
-    def __init__(self) ->None:
-        super(MainWindow,self).__init__()
-        self.setupUi(self)
-        self.pushButton_voltar_menu.clicked.connect(lambda: self.closedMenu(calendario))
-        self.pushButton_Auditorios.clicked.connect(lambda: self.closedMenu(auditorio))
-        self.pushButton_SalaReuniao.clicked.connect(lambda: self.closedMenu(sala_reuniao))
-        self.pushButton_SalasEstudo.clicked.connect(lambda: self.closedMenu(sala_estudo))
-        self.pushButton_Labs.clicked.connect(lambda: self.closedMenu(laboratorio))
-
-    def closedMenu(self, janela):
-        janela.show()
-
-class Sala_de_reuniao(QWidget, Sala_de_reuniao):
-    def __init__(self) ->None:
-        super(Sala_de_reuniao, self).__init__()
-        self.setupUi(self)
-
-class Auditorios(QWidget, Auditorios):
-    def __init__(self) -> None:
-        super(Auditorios, self).__init__()
-        self.setupUi(self)
-        self.pushButton_auditorio_voltar.clicked.connect(lambda: self.closedAuditorio())
-    
-
-    def closedAuditorio(self):
-        mainwindow.show()
-        self.close()
-
-class Laboratorio(QWidget, Laboratorio):
-    def __init__(self) -> None:
-        super(Laboratorio, self).__init__()
->>>>>>> Stashed changes
         self.setupUi(self)
         self.pushButton_relatorio_volar.clicked.connect(lambda: closed(self, mainwindow))
 def dados():
     login1 = Login('Admin', '12345')
     login1.incluir()
 
-class Sala_de_estudo(QWidget, Sala_de_estudo):
-    def __init__(self) ->None:
-        super(Sala_de_estudo, self).__init__()
-        self.setupUi(self)
-        self.pushButton_edit_class_meeting_01.clicked.connect(lambda: self.edicao('401'))
-        self.pushButton_edit_class_meeting_02.clicked.connect(lambda: self.edicao('402'))
-        self.pushButton_edit_class_meeting_03.clicked.connect(lambda: self.edicao('403'))
-        self.pushButton_salaestudo_voltar.clicked.connect(lambda: self.closedSaladeestudo(mainwindow))
-
-    def edicao(self, id):
-        edicao_ambiente.show()
-
-    def closedSaladeestudo(self):
-        mainwindow.show()
-        self.close()
-
-class EdicaoAmbientes(QWidget, EdicaoAmbientes):
-    def __init__(self) ->None:
-        super(EdicaoAmbientes, self).__init__()
-        self.setupUi(self)
-
-    def reservar(self, id_ambiente):
-        data_time = calendario.pushButtonConfirmar.clicked.connect(lambda: calendario.data_time_escolido()) 
-        cliente.show()
-        id_cliente = cliente.push_button_register.clicked.connect(lambda: cliente.cliente_atual())
-        Reseva(id_cliente, id_ambiente, data_time[0], data_time[1], data_time[2]).varificar_resevas()
-        
-    def editar(self, id_ambiente):
-        descricao = self.textEdit_descricao_ambiente
-        tamanho = self.lineEdit__tamanho_ambiente
-        self.butaoConfirmar.clicked.connect(CadastroAmbientes(id_ambiente, descricao, tamanho).alterar())
-        self.botaoCancelar.clicked.connect(lambda: closed)
-
-    def checkAmbiente(self):
-        pass
-
-class Closed_open():
-    def __init__(self) -> None:
-        self.close()
-    def OpenJanela(self, janela):
-        janela.show()
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    closed = ClosedJanelas()
     login = LoginWidget()
     calendario = CalendarioWidget()
     mainwindow = MainWindow()
-<<<<<<< Updated upstream
-=======
-    cliente = ClienteWidget()
-    edicao_ambiente = EdicaoAmbientes()
->>>>>>> Stashed changes
     sala_reuniao = Sala_de_reuniao()
     sala_estudo = Sala_de_estudo()
     auditorio = Auditorios()

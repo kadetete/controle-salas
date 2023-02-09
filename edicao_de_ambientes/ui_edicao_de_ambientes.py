@@ -19,11 +19,7 @@ from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QLineEdit,
     QPushButton, QSizePolicy, QSpacerItem, QTextEdit,
     QVBoxLayout, QWidget)
 
-<<<<<<< Updated upstream
 class Ambientes(object):
-=======
-class EdicaoAmbientes(object):
->>>>>>> Stashed changes
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
