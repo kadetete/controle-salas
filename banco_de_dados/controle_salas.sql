@@ -1,7 +1,7 @@
-#drop database controleSalas;
+#drop database controlesalas;
 
-create database controleSalas;
-use controleSalas;
+create database controlesalas;
+use controlesalas;
 create table login(
 idlogin int auto_increment primary key,
 usuario varchar(100) not null,
