@@ -4,7 +4,7 @@ import bcrypt
 
 class Conexao_mysql():
     try:
-        def __init__(self, host ="localhost", user = "root", pwd = "", db = "controlesalas" ):
+        def __init__(self, host ="localhost", user = "root", pwd = "", db = "controleSalas" ):
             self.host = host
             self.user = user
             self.pwd = pwd
@@ -56,6 +56,12 @@ class Cliente():
       sql += f"VALUES ({self.__matricula}, '{self.__nome}', '{self.__sobrenome}')"
       c.executa_DML(sql)
 
+  def id(self):
+    c = Conexao_mysql()
+    sql = 'SELECT * from cliente'
+    for linha in c.executa_DQL(sql):
+      if(f'{linha[1]}' == f'{self.__matricula}'):
+        return linha[0]
   def alterar(self, matricula, va2, va1):
         c = Conexao_mysql()
         sql  = f"UPDATE cliente "
@@ -109,58 +115,68 @@ class Login():
       if(achou == False):
         print('Login e senha invalidos')
         return False
+     
+class BD_Ambientes():
+  def __init__(self, id_ambiente) -> None:
+    self.id_ambiente = id_ambiente
+    
+  def visualizar(self):
+    c = Conexao_mysql()
+    sql = 'SELECT * from ambiente'
+    for linha in c.executa_DQL(sql):
+      if(f'{linha[0]}' == f'{self.id_ambiente}'):
+        descricao_sala = f'Tamanho: {linha[1]}\n'
+        descricao_sala += f'Descrição:\n  {linha[2]}'
+    else: 
+      descricao_sala = 'Descrição'
+    return descricao_sala
       
-class CadastroAmbientes():
-  def __init__(self, idambiente, descricao, tamanho):
-    self.__idambiente = idambiente
-    self.__descricao  = descricao
-    self.__tamanho    = tamanho
-
-  def incluir(self):
+  def incluir(self, descricao, tamanho):
     c = Conexao_mysql()
     achou = False
     sql = 'SELECT * from ambiente'
+    print(self.id_ambiente, descricao, tamanho)
     for linha in c.executa_DQL(sql):
-      if(f'{linha[0]}' == f'{self.__idambiente}'):
+      if(f'{linha[0]}' == f'{self.id_ambiente}'):
+        self.alterar(descricao, tamanho)
         achou = True
         
-    if(achou == False):       
+    if(achou == False):     
+      print(sql)  
       sql  = f"INSERT INTO ambiente (idambiente, descricao, tamanho) "
-      sql += f"VALUES ({self.__idambiente}, '{self.__descricao}', '{self.__tamanho}')"
+      sql += f"VALUES ({self.id_ambiente}, '{descricao}', '{tamanho}')"
+      print(sql) 
       c.executa_DML(sql)
 
-  def alterar(self):
-        c = Conexao_mysql()
-        sql  = f"UPDATE ambiente "
-        sql += f"SET descricao = '{self.__descricao}', tamanho = '{self.__tamanho}' "
-        sql += f"WHERE idambiente = {self.__idambiente}"
-        c.executa_DML(sql)
+  def alterar(self, descricao, tamanho):
+      c = Conexao_mysql()
+      sql  = f"UPDATE ambiente "
+      sql += f"SET descricao = '{descricao}', tamanho = '{tamanho}' "
+      sql += f"WHERE idambiente = {self.id_ambiente}"
+      c.executa_DML(sql)
 
 class Reseva():
   def __init__(self, idcliente, idambiente, data_reserva, horario_inicio, horario_final):
     self.__idcliente      = idcliente
     self.__idambiente     = idambiente
-    self.__data_reserva   = data_reserva
+    data_reserva   = f"{data_reserva[2]}-{self.formatarData(data_reserva[1], data_reserva[0], '-')}"
+    self.__data_reserva = data_reserva 
+    horario_inicio = f"{self.formatarData(horario_inicio[0], horario_inicio[1], ':')}:00"
     self.__horario_inicio = horario_inicio
-    self.__horario_final  = horario_final
-  def varificar_resevas(self):
-      achou = False
+    horario_final  = f"{self.formatarData(horario_final[0], horario_final[1], ':')}:00"
+    self.__horario_final = horario_final
+
+  def verificar_resevas(self):
       c = Conexao_mysql()
-      sql = 'SELECT * from reserva'
-      for linha in c.executa_DQL(sql):
-        if(f'{linha[1]}' == f'{self.__idcliente}'):
-          if(f'{linha[3]}' == f'{self.__data_reserva}'):
-            t = linha[4] 
-            int()
-            if(linha[4] >= self.__horario_final  ):
-              achou = True
-            print('Login e senha validos')
-            return True
-          else:
-            print('Senha invalida')
-            return False 
-      if(achou == False):
-        sql  = f"INSERT INTO reserva (idcliente, idambiente, data_reserva, horario_inicio, horario_final) "
-        sql += f"VALUES ('{self.__idcliente}', '{self.__idambiente}', '{self.__data_reserva}', '{self.__horario_inicio}', '{self.__horario_final}')"
-        c.executa_DML(sql)
-        return False
+      sql  = f"INSERT INTO reserva (idcliente, idambiente, data_reserva, horario_inicio, horario_final) "
+      sql += f"VALUES ({self.__idcliente}, {self.__idambiente}, '{self.__data_reserva}', '{self.__horario_inicio}', '{self.__horario_final}')"
+      c.executa_DML(sql)
+      
+  def formatarData(self, hora, min, sinal):
+    self.hora = hora
+    self.min = min
+    if self.hora < 10:
+      self.hora = f'0{self.hora}'
+    if self.min < 10:
+      self.min = f'0{self.min}'
+    return f'{self.hora}{sinal}{self.min}'

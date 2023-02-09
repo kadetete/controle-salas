@@ -54,7 +54,7 @@ class MenuMainWindow(object):
             icon.addFile(u".", QSize(), QIcon.Normal, QIcon.Off)
 
         self.pushButton_voltar_menu.setIcon(icon)
-        self.pushButton_voltar_menu.setFlat(True)
+        self.pushButton_voltar_menu.setFlat(False)
 
         self.gridLayout.addWidget(self.pushButton_voltar_menu, 0, 0, 1, 1)
 
@@ -192,7 +192,7 @@ class MenuMainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.pushButton_voltar_menu.setText("")
+        self.pushButton_voltar_menu.setText(QCoreApplication.translate("MainWindow", u"voltar", None))
         self.label_hora.setText(QCoreApplication.translate("MainWindow", u"hhhhhh", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Dias Selecionados:", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Hora:", None))

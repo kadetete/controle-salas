@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'form.ui'
+## Form generated from reading UI file 'relacaoreservas.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QHeaderView, QLabel, QLayout, QPushButton,
     QScrollBar, QSizePolicy, QTableView, QWidget)
 
-class Ui_Widget(object):
+class RelacaoReservas(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
@@ -49,10 +49,10 @@ class Ui_Widget(object):
         if QIcon.hasThemeIcon(iconThemeName):
             icon = QIcon.fromTheme(iconThemeName)
         else:
-            icon.addFile(u"../../controle-salas", QSize(), QIcon.Normal, QIcon.Off)
+            icon.addFile(u"../", QSize(), QIcon.Normal, QIcon.Off)
 
         self.pushButton_relatorio_volar.setIcon(icon)
-        self.pushButton_relatorio_volar.setFlat(True)
+        self.pushButton_relatorio_volar.setFlat(False)
 
         self.horizontalLayout_3.addWidget(self.pushButton_relatorio_volar)
 
@@ -126,7 +126,7 @@ class Ui_Widget(object):
 
     def retranslateUi(self, Widget):
         Widget.setWindowTitle(QCoreApplication.translate("Widget", u"Widget", None))
-        self.pushButton_relatorio_volar.setText("")
+        self.pushButton_relatorio_volar.setText(QCoreApplication.translate("Widget", u"Voltar", None))
         self.label_33.setText(QCoreApplication.translate("Widget", u"                           SICOGES", None))
         self.label_35.setText(QCoreApplication.translate("Widget", u"Relatorio de Salas Reservadas", None))
     # retranslateUi
