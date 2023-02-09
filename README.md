@@ -121,7 +121,7 @@ Aqui fazemos o cadastro do cliente que deseja reservar alguma das salas da empre
 ### Tela 06 - Edição de salas
 Tela que aparece após clicar na opção 'editar' de uma das telas de ambiente. Aqui, aparecerá no topo o tipo de ambiente que você está editando, e o logo abaixo a sala específica. Nos campos são inseridos o tamanho e a descrição para serem modificadas.
 
-![Tela de edição de salas](img/telaedicao_final.png)
+![Tela de edição de salas](img/edicaodeambientes_final.png)
 
 <div id='telarelatorio'/>
 
